@@ -92,7 +92,7 @@ class Mission
 	randomSeed=13763187;
 	class Intel
 	{
-		briefingName="DCG ALTIS ESUS v1";
+		briefingName="DCG ALTIS ESUS v0.2";
 		overviewText="Misión dinámica en la tendremos que cumplir diversas tareas ayudando a la población de la isla.";
 		resistanceWest=0;
 		startWeather=0.29999998;
@@ -198,7 +198,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="a_sl";
-					description="Alpha Squad Leader";
+					description="Alpha SL Medics";
 				};
 				class Item1
 				{
@@ -3408,7 +3408,7 @@ class Mission
 			vehicle="Flag_NATO_F";
 			skill=0.60000002;
 			text="SEN_flagMOB";
-			init="this allowDamage false; this setFlagTexture ""media\SEN_imgLogo.paa"";";
+			init="this allowDamage false; this setFlagTexture ""media\esusflag.jpg"";";
 		};
 		class Item196
 		{
@@ -3418,7 +3418,7 @@ class Mission
 			vehicle="Flag_NATO_F";
 			skill=0.60000002;
 			text="SEN_flagFOB";
-			init="this allowDamage false; this setFlagTexture ""media\SEN_imgLogo.paa"";";
+			init="this allowDamage false; this setFlagTexture ""media\esusflag.jpg"";";
 		};
 		class Item197
 		{

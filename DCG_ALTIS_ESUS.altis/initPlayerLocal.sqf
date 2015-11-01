@@ -177,7 +177,7 @@ if (SEN_acreEnabled) then {
 	sleep 2;
 	closeDialog 0;
 	_ret = [
-		parseText "<img size='3' valign='top' align='center' image='media\SEN_imgLogo.paa'/><br/><br/><t align='center'>Bienvenido a DCG ALTIS ESUS v1</t><br/><br/><t align='center'>Installed Version: 3.0.9</t><br/><t align='center'>,
+		parseText "<img size='3' valign='top' align='center' image='media\esusmain.paa'/><br/><br/><t align='center'>Bienvenido a DCG ALTIS ESUS v0.2</t><br/><br/>",
 		"Bienvenido a DCG ALTIS",
 		"Manual",
 		"Continuar"

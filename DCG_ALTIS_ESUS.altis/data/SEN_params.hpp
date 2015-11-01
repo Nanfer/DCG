@@ -83,7 +83,7 @@ class param_SEN_occupiedEnemyCount {
    title = "Occupied Location Enemy Count";
    values[] = {20,40};
    texts[] = {"Low", "High"};
-   default = 20;
+   default = 40;
    SEN_paramCode = "SEN_occupiedEnemyCount = %1;";
    SEN_paramBoolean = 0;
    SEN_paramPublic = 0;
