@@ -17,7 +17,7 @@ class SEN_hint
 {
     displayName = "Dynamic Combat Generator"; // display name for main class doesn't work. appears as <Mission> in Field Manual
     class SEN_overview
-	{
+    {
         arguments[] = {};
         displayName = "Información de la mision";
         description = "Dynamic Combat Generator usa pueblos, ciudades y capitales como base para su sistema.%1Al inicio de la mision, las fuerzas enemigas ocupan un numero de localizaciones; se fortifican y montan patrullas en base al tipo de asentamiento que sea.%1%1Una de las localizaciones ocupadas contiene un oficial enemigo con INTEL importante. El primer objetivo es tomar la citada INTEL.%1%1Desde aqui, DCG generara un numero de misiones en base a la informcion del oficial. Junto a las misiones principales hay misiones de civiles que pueden influir en la reputacion de las fuerzas BLUFOR con los locales.";
@@ -29,7 +29,7 @@ class SEN_hint
     {
         arguments[] = {};
         displayName = "Consejos";
-        description = "%1%2Los medicos civiles, en el centro medico Dodge,pueden curar cumpletamente a los jugadores.%1%2Para mover una unidad IA, la unidad tiene que estar retenida con precinto.%1%2Las misiones con el icono ""C"" representan misiones civiles.%1%2Algunas misiones solo aparecen si el FOB Pirelli esta desplegado.%1%2El seguro del arma se pone automaticamente al estar en el MOB Dodge.";
+        description = "%1%2Los medicos civiles, en el centro medico Dodge,pueden curar cumpletamente a los jugadores.%1%2Para mover una unidad IA, la unidad tiene que estar retenida con precinto.%1%2Las misiones con el icono "C" representan misiones civiles.%1%2Algunas misiones solo aparecen si el FOB Pirelli esta desplegado.%1%2El seguro del arma se pone automaticamente al estar en el MOB Dodge.";
         tip = "";
         image = "media\SEN_imgLogoSquare.paa";
         noImage = false;
@@ -47,7 +47,7 @@ class SEN_hint
     {
         arguments[] = {};
         displayName = "Headless Client";
-        description = "DCG features headless client support to alleviate server strain.%1%2The headless client must be connected at mission start.%1%2Only occupied location units and patrol units will spawn on the headless client.";
+        description = "DCG cuenta con apoyo de Headless Client para aligerar la carga del servidor.%1%2El headless client tiene que estar conectado al principio de la mision.%1%2Solo las unidades de patrullas y las que se encuentren en las zonas ocupadas apareceran con el headless client.";
         tip = "";
         image = "media\SEN_imgLogoSquare.paa";
         noImage = false;
@@ -55,8 +55,8 @@ class SEN_hint
     class SEN_parameters
     {
         arguments[] = {};
-        displayName = "Mission Parameters";
-        description = "Debug Mode%1%2Toggles debug/test mode. All debug messages are logged to a rpt file.%1Disable Third Person Camera%1%2Disables third person view for players. This parameter does not affect players in vehicles.%1Season%1%2Sets the mission weather based on the selected season and map.%1Time of Day%1%2Sets the mission time.%1Enemy Side%1%2Sets the enemy side.%1Enemy Patrols%1%2Toggles enemy patrols. Patrols consists of infantry and technical units that spawn around an occupied location. The number of patrols is dependent on map size.%1Armored Patrol Count%1%2Sets the amount of patrols that will be technicals.%1Occupied Location Count%1%2Sets the number of occupied locations.%1Occupied Location Enemy Count%1%2Sets the number of enemies to spawn in an occupied location.%1Roadside IEDs%1%2Toggles roadside IEDs. The amount of IEDs is dependent on map size.%1Visual Effects%1%2Toggles visual effects such as destroyed buildings and burning vehicles.%1Use Modified Content if Available%1%2Toggles the use of units and vehicles from addon content.%1AI Cache Distance%1%2The distance from a player at which mission AI will disable simulation.";
+        displayName = "Parametros de la mision";
+        description = "Revisar parametros desde el Lobby cuando se esta loggeado como Administrador antes de lanzar la mision.";
         tip = "";
         image = "media\SEN_imgLogoSquare.paa";
         noImage = false;
@@ -64,9 +64,9 @@ class SEN_hint
     class SEN_occupation
     {
         arguments[] = {};
-        displayName = "Occupation";
-        description = "At the start of the mission enemy forces will occupy a number of local settlements.%1%1While in conflict in an occupied location, enemies may surrender once players start to seize control of the settlement.%1%1Once an occupied location is liberated, players will be informed and the corresponding map markers will update.%1%1If the enemy officer is in the occupied location, his general area will be marked once players have seized the location.%1%1The following may appear at an occupied location.%1%2Garrisoned enemies%1%2Enemy snipers in the surrounding hills%1%2Motorized patrols%1%2Air patrols%1%2Static emplacements%1%2Manned towers";
-        tip = "An occupied location's defenses depend on the size of the settlement. So, it may not be in a player's best interest to attack an occupied capital without a sizable force.%1%1The opposition may send reinforcements once players have liberated a location.";
+        displayName = "Ocupacion";
+        description = "Al principio de la mision las fuerzas enemigas ocuparan un numero de asentamientos.%1%1Durante el conflicto en una zona ocupada, el enemigo puede rendirse una vez el jugador comienza a atacar el asentamiento.%1%1Cuando un asentamiento ocupado es liberado, los jugadores seran informados y las correspondientes marcas seran actualizadas.%1%1Si el oficial enemigo esta en la zona ocupada, se marcara su posicion una vez la zona sea liberada.%1%1Los siguientes enemigos pueden aparecer en la zona ocupada.%1%2Enemigos atrincherados%1%2Francotiradores enemigos en las colinas circundantes%1%2Patrullas motorizadas%1%2Patrullas aereas%1%2Armas estaticas%1%2Torres de vigilancia";
+        tip = "Las defensas de una posicion ocupada dependen del tamaño del asentamiento. Por lo que quizas no interesa a las fuerzas BLUFOR atacar capitales ocupadas sin las fuerzas necesarias.%1%1La oposicion puede enviar refuerzos una vez los BLUFOR han liberado un asentamiento.";
         image = "media\SEN_imgLogoSquare.paa";
         noImage = false;
     };
@@ -74,7 +74,7 @@ class SEN_hint
     {
         arguments[] = {};
         displayName = "Arsenal";
-        description = "DCG uses Bohemia's Virtual Arsenal. Players can access Arsenal at the headquarters. %1%1There is a %3Take Radio%4 action at the Arsenal box that will quickly equip the player with ACRE2 or TFAR equipment (see Communications Network tab for more info).";
+        description = "DCG usa el Arsenal Virtual de Bohemia. Los jugadores tienen acceso al Arsenal en el HQ. %1%1Hay una accion de %3Coger Radio%4 en la caja del Arsenal que equipara al jugador rapidamente con una radio compatible con ACRE2 o TFAR (mirar la pestaña de Mallas de Comunicaciones para mas informacion).";
         tip = "";
         image = "media\SEN_imgLogoSquare.paa";
         noImage = false;
@@ -82,9 +82,9 @@ class SEN_hint
     class SEN_civInteraction
     {
         arguments[] = {};
-        displayName = "Civilian Interaction";
-        description = "Your civilian approval determines what kind of interaction you will have with the local population.%1%1Completing civilian tasks (C) and liberating occupied locations will improve your standing with civilians and encourage them to provide players with valuable intel, while killing civilians will negatively affect your approval.%1%1Civilian approval can be influenced by the FOB system (see Logistics tab).";
-        tip = "Players can check their civilian approval through the ACE interaction menu.";
+        displayName = "Interaccion civil";
+        description = "Vuestra aprobacion civil determina los tipos de interacciones que tendreis con la poblacion local.%1%1Completando misiones civiles (C) y liberando localizaciones ocupadas mejorareis vuestra reputacion con los civiles y fomentareis la colaboracion civil para que os provean de INTEL's, mientras que si se matan civiles, esto afectara negativamente vuestra reputacion.%1%1La aprobacion civil puede ser influida por el sistema del FOB (revisar pestaña de Logistica).";
+        tip = "Los jugadores pueden revisar su aprovacion con los civiles a traves del menu de interaccion de ACE.";
         image = "media\SEN_imgLogoSquare.paa";
         noImage = false;
     };
@@ -109,8 +109,8 @@ class SEN_hint
     class SEN_comm
     {
         arguments[] = {};
-        displayName = "Communications Network";
-        description = "%3COMMAND%4 Net%1%2platoon commander%1%2alpha squad leader%1%2bravo squad leader%1%1%3SUPPORT%4 Net%1%2platoon sargent%1%2rhino team%1%2reaper team%1%1%3SQUAD%4 Net (squad specific)%1%2includes all units%1%1DCG features a default communications network that works alongside ACRE2 and TFAR to provide players with a logical communications structure.%1%1The system uses a Platoon level structure that features three basic nets, %3COMMAND%4, %3SUPPORT%4 and %3SQUAD%4.%1%1By default, the %3COMMAND%4 net is limited to the platoon commander and squad leaders. This channel is for high level comms and connects the various elements.%1%1The %3SUPPORT%4 net connects the auxiliary elements to the platoon element. The platoon sargent (also the Forward Air Controller) oversees this network.%1%1The %3SQUAD%4 net contains all squad/team level communications. It is a different channel for each squad. Most players will operate on this network.%1%1To clarify, any individual that has access to the %3COMMAND%4 and %3SUPPORT%4 networks will also have access to the appropriate %3SQUAD%4 net.";
+        displayName = "Mallas de comunicaciones";
+        description = "%3MALLA DE MANDO%4 %1%2Comandante de peloton%1%2Lider de escuadra Alpha%1%2Lider de escuadra Bravo%1%1%3Malla de apoyo%4 %1%2Sargento de peloton%1%2Equipo Rhino%1%2Equipo Reaper%1%1%3Malla de escuadras%4 (especifico de escuadras)%1%2incluye todas las unidades%1%1DCG ofrece una red de comunicaciones predefinidaque funciona junto a ACRE2 y TFAR para proveer a los jugadores una estructura logica de comunicaciones.%1%1El sistema usa una estructura de Peloton que provee tres mallas basicas, %3MANDO%4, %3APOYO%4 y %3ESCUADRAS%4.%1%1Por defecto, la malla de %3MANDO%4 esta limitada al Comandante del peloton y a los lideres de escuadra. Este canal es para los mandos de alto rango y conecta varios elementos entre si.%1%1La malla de %3APOYO%4 conecta a los elementos auxiliares a los elementos del Peloton. El sargento de peloton (tambien el Controlador Aereo Avanzado) supervisa esta malla.%1%1La malla de %3ESCUADRAS%4 contiene todas las comunicaciones de escuadras y equipos. Es diferente para cada escuadra. La mayoria de jugadores operara en esta malla.%1%1Para aclarar, cualquier individuo que tenga acceso a las mallas de %3MANDO%4 y %3APOYO%4 tambien tendra acceso a la malla apropiada de %3ESCUADRA%4.";
         tip = "";
         image = "media\SEN_imgLogoSquare.paa";
         noImage = false;
