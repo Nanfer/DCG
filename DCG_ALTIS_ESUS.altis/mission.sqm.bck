@@ -92,7 +92,7 @@ class Mission
 	randomSeed=13763187;
 	class Intel
 	{
-		briefingName="DCG ALTIS ESUS v0.2";
+		briefingName="DCG ALTIS ESUS v0.3";
 		overviewText="Misión dinámica en la tendremos que cumplir diversas tareas ayudando a la población de la isla.";
 		resistanceWest=0;
 		startWeather=0.29999998;
@@ -133,7 +133,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="plt_co";
-					description="Platoon Commander";
+					description="UNIFORM Lider Global";
 				};
 				class Item1
 				{
@@ -147,7 +147,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="plt_sgt";
-					description="Platoon Sergeant / FAC";
+					description="UNIFORM RTO";
 				};
 				class Item2
 				{
@@ -161,7 +161,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="plt_med";
-					description="Platoon Medic";
+					description="UNIFORM Medico";
 				};
 				class Item3
 				{
@@ -437,7 +437,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="b_sl";
-					description="Bravo Squad Leader";
+					description="Bravo SL Medic";
 				};
 				class Item1
 				{

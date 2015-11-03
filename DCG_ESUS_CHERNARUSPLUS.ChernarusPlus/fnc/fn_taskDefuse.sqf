@@ -34,8 +34,8 @@ _pos1 = [];
 _pos2 = [];
 
 _taskID = "defuse";
-_taskText = "Defuse Explosives";
-_taskDescription = format["Intel obtained from the enemy officer details several explosive devices planted througout %1 (%2). If the detonator triggers, innocent civilians will die; we cannot allow this.<br/><br/>Find the defusal code on a laptop located in the settlement and disarm the detonator.",_townName,mapGridPosition _townPos];
+_taskText = "Desactivar el explosivo";
+_taskDescription = format["La informacion obtenida del enemigo detalla el despliegue de IEDs en la zona de operaciones. %1 (%2). Si los explosivos improvisados estallan, civiles inocentes moriran; no podemos permitirlo.<br/><br/>Encuentre el codigo de desactivación en la zona designada y desactive el detonador.",_townName,mapGridPosition _townPos];
 
 // A2 map compatibility
 _centerCheck = isClass (configfile >> "CfgWorlds" >> worldName >> "Names" >> ("ACityC_" + _townName));

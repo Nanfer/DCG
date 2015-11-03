@@ -41,7 +41,7 @@ CIVILIAN setFriend [SEN_enemySide,1];
 // location setup
 SEN_range = worldSize*0.5;
 SEN_centerPos = [SEN_range,SEN_range,0];
-_SEN_blacklistLocation = ["Cedras","Parato","Ortego","Gaula","Ixel","Tandag"]; // locations in array will be removed from DCG. You can add to array, but do not remove current locations from list
+_SEN_blacklistLocation = ["Sagonisi","Ekali","Timurkalay","Delfinaki","Kalithea","Ioannina"]; // locations in array will be removed from DCG. You can add to array, but do not remove current locations from list
 
 { // if location is in _SEN_blacklistLocation, does not have a name or is near the MOB safezone, it is not added to DCG
 	_locName = text _x;
@@ -95,15 +95,15 @@ if (GET_DEBUG) then {
 // MOB Dodge Medical Center setup
 private "_grp";
 if !(getMarkerColor "SEN_med_mrk" isEqualTo "") then {
-	_med = ["US_WarfareBFieldhHospital_Base_EP1","TK_WarfareBFieldhHospital_Base_EP1"];
+	_med = ["Land_Hospital_main_F", "Land_Hospital_side2_F", "Land_Hospital_side1_F", "Land_Medevac_house_V1_F", "Land_Medevac_HQ_V1_F"];
 	{
 		if ((typeOf _x) in _med) then {_x setvariable["ace_medical_isMedicalFacility", true, true]};
 	} forEach ((getMarkerPos "SEN_med_mrk") nearObjects ["House", 500]);
 	_grp = createGroup civilian;
 	_grp setBehaviour "CARELESS";
 	_grp setVariable ["zbe_cacheDisabled", true, true];
-	_hospital1 = (nearestObjects [getMarkerPos "SEN_med_mrk", ["US_WarfareBFieldhHospital_Base_EP1"], 500]) select 0;
-	_hospital2 = (nearestObjects [getMarkerPos "SEN_med_mrk", ["TK_WarfareBFieldhHospital_Base_EP1"], 500]) select 0;
+	_hospital1 = (nearestObjects [getMarkerPos "SEN_med_mrk", ["Land_Hospital_main_F"], 500]) select 0;
+	_hospital2 = (nearestObjects [getMarkerPos "SEN_med_mrk", ["Land_Medevac_HQ_V1_F"], 500]) select 0;
 	if !(isNil "_hospital1") then {
 		for "_i" from 3 to 6 do {
 			_doc = _grp createUnit ["C_scientist_F", getMarkerPos "SEN_med_mrk", [], 0, "NONE"];

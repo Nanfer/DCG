@@ -47,7 +47,7 @@ class param_SEN_enemySide {
    title = "Enemy Side";
    values[] = {0,2};
    texts[] = {"East", "Independent"};
-   default = 2;
+   default = 0;
    SEN_paramCode = "SEN_enemySide = %1;";
    SEN_paramBoolean = 0;
    SEN_paramPublic = 0;

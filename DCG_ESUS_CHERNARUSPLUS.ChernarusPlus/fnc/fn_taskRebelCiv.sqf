@@ -27,8 +27,8 @@ if (!(GET_APPROVAL(1)) || {count (call SEN_fnc_getPlayers) < 1}) exitWith {
 };
 
 if (GET_FOBDEPLOYED && random 1 < 0.5) then {
-	_taskText = "Rebel Attack (FOB)";
-	_taskDescription = "Aerial reconnaissance shows several hostile civilians advancing towards FOB Pirelli. Defend the FOB against the rebel attack!";
+	_taskText = "Ataque rebelde (FOB)";
+	_taskDescription = "Reconocimiento aereo indica multiples enemigos aproximandose a FOB Pirelli. Defienda el FOB del ataque rebelde.";
 	_targetPos = getPosATL SEN_flagFOB;
 	_spawnPos = [_targetPos,300,400] call SEN_fnc_findRandomPos;
 
@@ -88,8 +88,8 @@ if (GET_FOBDEPLOYED && random 1 < 0.5) then {
 		};
 	}, 5, [_taskID,_targetPos,_rebelGrp]] call CBA_fnc_addPerFrameHandler;
 } else {
-	_taskText = "Rebel Attack";
-	_taskDescription = "Aerial reconnaissance shows several hostile civilians advancing towards your position. Defend yourself against the rebel attack!";
+	_taskText = "Ataque rebelde";
+	_taskDescription = "Reconocimiento aereo indica multiples enemigos aproximandose a FOB Pirelli. Defienda el FOB del ataque rebelde.";
 
 	_playerArray = [];
 	{if (alive _x) then {_playerArray pushBack _x}} forEach (call SEN_fnc_getPlayers);

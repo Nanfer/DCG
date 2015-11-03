@@ -11,7 +11,7 @@ private ["_classname","_size","_pos","_isEmpty"];
 
 _classname = _this select 0;
 _size = _this select 1;
-hintSilent "Abre el mapa y selecciona HLZ.";
+hintSilent "Open your map and select a HLZ.";
 missionNamespace setVariable ["SEN_transportResponse", nil];
 
 [player,_classname,_size] onMapSingleClick "
@@ -49,7 +49,7 @@ missionNamespace setVariable ["SEN_transportResponse", nil];
 	};
 	if (diag_tickTime >= _time && {isNil "SEN_transportResponse"}) exitWith {
 		[_id] call CBA_fnc_removePerFrameHandler;
-		hintSilent "Transporte cancelado.";
+		hintSilent "Transport request canceled.";
 		player setVariable ['SEN_inProgress',false];
 		missionNamespace setVariable ['SEN_transportResponse', []];
 		publicVariableServer 'SEN_transportResponse';

@@ -14,8 +14,8 @@ if !(isServer) exitWith {};
 private ["_taskID","_taskText","_taskDescription","_artyRadius","_artyArray","_pos","_grpArray","_baseArray","_vehArray","_grp","_posArty","_arty","_gunner","_mrkArty","_hintInterval","_sound","_time"];
 
 _taskID = "arty";
-_taskText = "Eliminate Artillery";
-_taskDescription = "There is an imminent artillery barrage targeting MOB Dodge. Command is evacuating the base, but your team needs to disable the artillery immediately!";
+_taskText = "Eliminar artillería";
+_taskDescription = "Ataque inminente de artilleria sobre FOB Dodge. El mando está evacuando la base, pero necesitamos que tu equipo neutralize las baterias de artillería.";
 
 SEN_defused = false;
 SEN_armed = false;

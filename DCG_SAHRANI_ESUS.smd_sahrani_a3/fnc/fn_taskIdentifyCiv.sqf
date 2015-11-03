@@ -14,8 +14,8 @@ if !(isServer) exitWith {};
 private ["_taskID","_taskText","_taskDescription","_pos","_vehArray","_radius","_grpArray","_baseArray","_grp","_med","_bonus","_body","_bodyArray"];
 
 _taskID = format["%1_identify_civ",SEN_taskCounterCiv];
-_taskText = "ID Politician";
-_taskDescription = "Another local politician was executed live on television a few hours ago. In the aftermath of the event, the government publically blamed us, but we have intel on the actual culprits. Your orders are to infiltrate their camp and identify the deceased politician.";
+_taskText = "Identificar al politico";
+_taskDescription = "Otro politico de la zona ha sido ejecutado en directo hace unas horas. Despues del evento, el gobierno nos ha culpado por lo sucedido, pero la información actual obtenida detalla quie es el culpable. Sus ordenes son infiltrarse en el campamento e identificar al politico.";
 
 _bodyArray = [];
 _radius = 1000;

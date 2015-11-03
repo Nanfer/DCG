@@ -39,8 +39,8 @@ if (_pos isEqualTo []) exitWith {
 };
 
 _taskID = format["%1_rescue_civ",SEN_taskCounterCiv];
-_taskText = "Rescue Hostage";
-_taskDescription = format["We have intel that a civilian was taken hostage by enemy sympathizers at grid (%1). Local officials request that we rescue the civilian and escort him to %2. This is an important task that will get the local population on our side.",mapGridPosition _pos, text _returnTown];
+_taskText = "Rescatar al rehen";
+_taskDescription = format["Informacion obtenida indica que un civil ha sido secuestrado por simpatizantes enemigos cerca de (%1). Las autoridades locales solicitan el rescate del civil y lo escoltemos hasta %2. Esta importante tarea pondrá de nuestro lado a la poblacion local.",mapGridPosition _pos, text _returnTown];
 
 _vehType = _wreckArray select floor (random (count _wreckArray));
 _roads = _pos nearRoads 50;

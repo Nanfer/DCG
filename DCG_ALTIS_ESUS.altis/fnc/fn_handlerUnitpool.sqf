@@ -71,7 +71,7 @@ if (SEN_allowMod isEqualTo 1) then { // if modified content mission parameter is
 		// WEST UNITS
 		SEN_unitPoolWest = ["rhsusf_army_ucp_rifleman_101st","rhsusf_army_ucp_aa","rhsusf_army_ucp_javelin","rhsusf_army_ucp_autorifleman","rhsusf_army_ucp_medic","rhsusf_army_ucp_explosives","rhsusf_army_ucp_grenadier","rhsusf_army_ucp_marksman","rhsusf_army_ucp_teamleader"];
 		SEN_vehPoolWest = ["rhsusf_m1025_d_s_Mk19","rhsusf_m113_usarmy","rhsusf_m1025_w","rhsusf_m1025_w_m2"];
-		SEN_airPoolWest = ["RHS_CH_47F","RHS_UH1Y_US_base","RHS_UH60M","RHS_UH60M_MEV_d"];
+		SEN_airPoolWest = ["RHS_CH_47F","RHS_UH1Y_UNARMED","RHS_UH60M","RHS_UH60M_MEV_d"];
 		SEN_sniperPoolWest = ["rhsusf_army_ucp_sniper"];
 
 		// CIVILIAN UNITS

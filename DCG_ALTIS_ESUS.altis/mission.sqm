@@ -92,7 +92,7 @@ class Mission
 	randomSeed=13763187;
 	class Intel
 	{
-		briefingName="DCG ALTIS ESUS v0.3";
+		briefingName="DCG ALTIS ESUS v0.4";
 		overviewText="Misión dinámica en la tendremos que cumplir diversas tareas ayudando a la población de la isla.";
 		resistanceWest=0;
 		startWeather=0.29999998;
@@ -113,7 +113,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=12;
+		items=11;
 		class Item0
 		{
 			side="WEST";
@@ -133,7 +133,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="plt_co";
-					description="Platoon Commander";
+					description="UNIFORM Lider Global";
 				};
 				class Item1
 				{
@@ -147,7 +147,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="plt_sgt";
-					description="Platoon Sergeant / FAC";
+					description="UNIFORM RTO";
 				};
 				class Item2
 				{
@@ -161,7 +161,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="plt_med";
-					description="Platoon Medic";
+					description="UNIFORM Medico";
 				};
 				class Item3
 				{
@@ -175,7 +175,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="plt_eng";
-					description="Platoon Engineer";
+					description="UNIFORM Ingeniero";
 				};
 			};
 		};
@@ -184,15 +184,15 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=2;
+				items=4;
 				class Item0
 				{
-					position[]={15199.87,17.936178,17302.736};
+					position[]={15201.653,17.935297,17305.182};
 					azimut=771.74701;
 					special="NONE";
 					id=4;
 					side="WEST";
-					vehicle="B_Soldier_SL_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -202,7 +202,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={15200.819,17.937761,17301.549};
+					position[]={15203.845,17.940321,17303.605};
 					azimut=771.74701;
 					special="NONE";
 					id=5;
@@ -213,6 +213,34 @@ class Mission
 					skill=0.60000002;
 					text="a_med";
 					description="Alpha Squad Medic";
+				};
+				class Item2
+				{
+					position[]={15202.749,17.940334,17302.076};
+					azimut=771.74701;
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="b_med";
+					description="Bravo Squad Medic";
+				};
+				class Item3
+				{
+					position[]={15200.477,17.935184,17304.088};
+					azimut=771.74701;
+					special="NONE";
+					id=7;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="b_sl";
+					description="Bravo SL Medic";
 				};
 			};
 		};
@@ -227,7 +255,7 @@ class Mission
 					position[]={15198.468,17.934626,17301.623};
 					azimut=411.68399;
 					special="NONE";
-					id=6;
+					id=8;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
 					player="PLAY CDG";
@@ -242,7 +270,7 @@ class Mission
 					position[]={15197.575,17.933155,17302.709};
 					azimut=411.68399;
 					special="NONE";
-					id=7;
+					id=9;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
 					player="PLAY CDG";
@@ -256,7 +284,7 @@ class Mission
 					position[]={15195.608,17.927788,17304.768};
 					azimut=411.68399;
 					special="NONE";
-					id=8;
+					id=10;
 					side="WEST";
 					vehicle="B_soldier_AAR_F";
 					player="PLAY CDG";
@@ -270,7 +298,7 @@ class Mission
 					position[]={15196.704,17.930557,17303.787};
 					azimut=411.68399;
 					special="NONE";
-					id=9;
+					id=11;
 					side="WEST";
 					vehicle="B_soldier_LAT_F";
 					player="PLAY CDG";
@@ -284,7 +312,7 @@ class Mission
 					position[]={15199.335,17.935781,17300.549};
 					azimut=411.68399;
 					special="NONE";
-					id=10;
+					id=12;
 					side="WEST";
 					vehicle="B_Soldier_A_F";
 					player="PLAY CDG";
@@ -298,7 +326,7 @@ class Mission
 					position[]={15199.999,17.936666,17299.518};
 					azimut=411.68399;
 					special="NONE";
-					id=11;
+					id=13;
 					side="WEST";
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
@@ -317,7 +345,7 @@ class Mission
 				class Item0
 				{
 					position[]={15271.705,17.450121,17134.033};
-					id=12;
+					id=14;
 					side="LOGIC";
 					vehicle="Logic";
 					leader=1;
@@ -337,7 +365,7 @@ class Mission
 					position[]={15196.659,17.932617,17300.537};
 					azimut=411.68399;
 					special="NONE";
-					id=13;
+					id=15;
 					side="WEST";
 					vehicle="B_Soldier_TL_F";
 					player="PLAY CDG";
@@ -352,7 +380,7 @@ class Mission
 					position[]={15195.769,17.931168,17301.623};
 					azimut=411.68399;
 					special="NONE";
-					id=14;
+					id=16;
 					side="WEST";
 					vehicle="B_soldier_AR_F";
 					player="PLAY CDG";
@@ -366,7 +394,7 @@ class Mission
 					position[]={15193.8,17.926825,17303.682};
 					azimut=411.68399;
 					special="NONE";
-					id=15;
+					id=17;
 					side="WEST";
 					vehicle="B_soldier_AAR_F";
 					player="PLAY CDG";
@@ -380,7 +408,7 @@ class Mission
 					position[]={15194.897,17.929592,17302.705};
 					azimut=411.68399;
 					special="NONE";
-					id=16;
+					id=18;
 					side="WEST";
 					vehicle="B_soldier_LAT_F";
 					player="PLAY CDG";
@@ -394,7 +422,7 @@ class Mission
 					position[]={15197.528,17.934044,17299.467};
 					azimut=411.68399;
 					special="NONE";
-					id=17;
+					id=19;
 					side="WEST";
 					vehicle="B_Soldier_A_F";
 					player="PLAY CDG";
@@ -408,7 +436,7 @@ class Mission
 					position[]={15198.19,17.935423,17298.432};
 					azimut=411.68399;
 					special="NONE";
-					id=18;
+					id=20;
 					side="WEST";
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
@@ -419,43 +447,6 @@ class Mission
 			};
 		};
 		class Item5
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=2;
-				class Item0
-				{
-					position[]={15188.569,17.905865,17314.17};
-					azimut=771.74701;
-					special="NONE";
-					id=19;
-					side="WEST";
-					vehicle="B_Soldier_SL_F";
-					player="PLAY CDG";
-					leader=1;
-					rank="CAPTAIN";
-					skill=0.60000002;
-					text="b_sl";
-					description="Bravo SL Medic";
-				};
-				class Item1
-				{
-					position[]={15189.522,17.908724,17312.979};
-					azimut=771.74701;
-					special="NONE";
-					id=20;
-					side="WEST";
-					vehicle="B_medic_F";
-					player="PLAY CDG";
-					rank="SERGEANT";
-					skill=0.60000002;
-					text="b_med";
-					description="Bravo Squad Medic";
-				};
-			};
-		};
-		class Item6
 		{
 			side="WEST";
 			class Vehicles
@@ -547,7 +538,7 @@ class Mission
 				};
 			};
 		};
-		class Item7
+		class Item6
 		{
 			side="WEST";
 			class Vehicles
@@ -639,7 +630,7 @@ class Mission
 				};
 			};
 		};
-		class Item8
+		class Item7
 		{
 			side="WEST";
 			class Vehicles
@@ -690,7 +681,7 @@ class Mission
 				};
 			};
 		};
-		class Item9
+		class Item8
 		{
 			side="WEST";
 			class Vehicles
@@ -755,7 +746,7 @@ class Mission
 				};
 			};
 		};
-		class Item10
+		class Item9
 		{
 			side="LOGIC";
 			class Vehicles
@@ -776,7 +767,7 @@ class Mission
 				};
 			};
 		};
-		class Item11
+		class Item10
 		{
 			side="LOGIC";
 			class Vehicles

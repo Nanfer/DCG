@@ -4,20 +4,20 @@ class Header {
 	maxPlayers = 40;
 };
 
-overviewPicture = "media\SEN_imgLoading.paa";
-Author = "SENSEI / Piratajr";
-onLoadName = "DCG ESUS 3.0.9.2";
-onLoadMission = "DCG ESUS 3.0.9.2 by Piratajr";
-loadScreen = "media\SEN_imgLogo.paa";
+overviewPicture = "media\esusmain.paa";
+Author = "SENSEI/Piratajr";
+onLoadName = "Dynamic Combat Gen.";
+onLoadMission = "DCG Chernarus + ESUS v0.1";
+loadScreen = "media\esusmain.paa";
 briefing = 0;
 respawn = 3;
-respawndelay = 15;
+respawndelay = 30;
 RespawnDialog = 1;
 disabledAI = 1;
 //ShowGPS = 0;
-//forceRotorLibSimulation = 1;
+forceRotorLibSimulation = 1;
 enableDebugConsole = 1;
-//allowFunctionsLog = 1;
+allowFunctionsLog = 1;
 //allowFunctionsRecompile = 1;
 
 corpseManagerMode = 1;
@@ -30,7 +30,7 @@ wreckLimit = 5;
 wreckRemovalMinTime = 60;
 wreckRemovalMaxTime = 600;
 
-taskManagement_markers3D = 1;
+taskManagement_markers3D = 0;
 taskManagement_markers2D = 1; //0: do not use new 2D markers (default), 1: replace task markers with new 2D markers
 taskManagement_propagate = 0; //0: do not propagate (default), 1: propagate shared tasks to subordinates
 taskManagement_drawDist = 250; //3D marker draw distance as UNASSIGNED (default: 2000)
@@ -41,6 +41,7 @@ taskManagement_drawDist = 250; //3D marker draw distance as UNASSIGNED (default:
 #include "data\explosivePad.hpp"
 #include "data\SEN_ace_settings.hpp"
 #include "data\SEN_XEH.hpp"
+#include "CHVD\dialog.hpp"
 
 class Params {
 	#include "data\SEN_params.hpp"
@@ -48,6 +49,7 @@ class Params {
 class CfgFunctions {
 	#include "scripts\VVS\Functions.h"
 	#include "data\SEN_cfgFunctions.hpp"
+	#include "CHVD\CfgFunctions.hpp"
 };
 class RscTitles {
 	#include "scripts\VehicleHud\hud_titles.sqf"

@@ -190,7 +190,7 @@ class ACE_Settings {
         force = 1;
     };
     class ace_medical_AIDamageThreshold {
-        value = 0.2;
+        value = 0.1;
         typeName = "SCALAR";
         force = 1;
     };
@@ -205,7 +205,7 @@ class ACE_Settings {
         force = 1;
     };
     class ace_medical_preventInstaDeath {
-        value = 0;
+        value = 1;
         typeName = "BOOL";
         force = 1;
     };

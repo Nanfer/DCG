@@ -21,8 +21,8 @@ if (_pos isEqualTo []) exitWith {
 };
 
 _taskID = format["%1_stabilize_civ",SEN_taskCounterCiv];
-_taskText = "Stabilize Civilian";
-_taskDescription = format["Aerial reconnaissance shows a civilian was attacked by enemy sympathizers at grid (%1) near %2. Local officials request that we provide immediate medical attention and transport the civilian to Dodge Medical Center. This is an important task that will get the local population on our side.",mapGridPosition _pos, text _town];
+_taskText = "Atención medica";
+_taskDescription = format["Reconocmiento aero muestra ataques enemigos sobre la poblacion civil de (%1) cerca %2. Las autoridades locales solicitan el traslado de los heridos al centro médico de base. Esta importante tarea pondra de nuestro lado a la poblacion civil de la zona.",mapGridPosition _pos, text _town];
 
 _ambush = false;
 _wreckArray = ["Land_Wreck_Truck_dropside_F","Land_Wreck_Truck_F","Land_Wreck_UAZ_F","Land_Wreck_Ural_F","Land_Wreck_Van_F","Land_Wreck_Skodovka_F","Land_Wreck_CarDismantled_F","Land_Wreck_Car3_F","Land_Wreck_Car_F"];
