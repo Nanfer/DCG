@@ -177,7 +177,7 @@ if (SEN_acreEnabled) then {
 	sleep 2;
 	closeDialog 0;
 	_ret = [
-		parseText "<img size='3' valign='top' align='center' image='media\SEN_imgLogo.paa'/><br/><br/><t align='center'>Bienvenido a DCG FATA ESUS v1</t><br/><br/><t align='center'>Version: 3.0.9.1</t><br/>",
+		parseText "<img size='3' valign='top' align='center' image='media\SEN_imgLogo.paa'/><br/><br/><t align='center'>Bienvenido a DCG FATA ESUS v0.2</t><br/><br/><t align='center'>Version: 3.0.9.1</t><br/>",
 		"Bienvenido a DCG ESUS",
 		"Manual",
 		"Continuar"

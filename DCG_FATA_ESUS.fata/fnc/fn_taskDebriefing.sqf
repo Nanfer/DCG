@@ -14,7 +14,7 @@ if !(isServer) exitWith {};
 private ["_taskID","_taskText","_taskDescription"];
 
 _taskID = "debriefing";
-_taskText = "Debriefing (Mission Complete)";
-_taskDescription = "Return to MOB Dodge and assess the mission outcome.";
+_taskText = "Informe (Misión completada)";
+_taskDescription = "Vuelva a base e informe sobre el resultado de la misión";
 
 SET_TASKWPOS(_taskID,_taskDescription,_taskText,getPosATL SEN_mob_laptop,"Default")

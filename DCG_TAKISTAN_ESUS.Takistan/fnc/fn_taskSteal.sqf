@@ -14,8 +14,8 @@ if !(isServer) exitWith {};
 private ["_taskID","_taskText","_taskDescription","_radius","_pos","_grpArray","_baseArray","_vehArray","_grp","_mrk"];
 
 _taskID = "steal";
-_taskText = "Steal Intel";
-_taskDescription = "The enemey have created a highly advanced weapons device. We cannot allow the opposition to gain the upper hand. Find the device and retrieve intel from its onboard computer.";
+_taskText = "Obtener informacion";
+_taskDescription = "El enemigo tiene en su poder armamento avanzado. No podemos permitir que el enemigo nos gane terreno. Encuentre el armamento y obtenga toda la informacion posibe.";
 
 _radius = 1200;
 _pos = [SEN_centerPos,SEN_range,140] call SEN_fnc_findRuralFlatPos;

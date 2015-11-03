@@ -86,8 +86,8 @@ class Mission
 	randomSeed=9482434;
 	class Intel
 	{
-		briefingName="DCG_ESUS_CHERNARUSPLUS_V0.2";
-		overviewText="DCG ESUS Chernarus Plus v0.2";
+		briefingName="DCG_ESUS_CHERNARUSPLUS_V0.3";
+		overviewText="DCG ESUS Chernarus Plus v0.3";
 		resistanceWest=0;
 		startWeather=0.25;
 		startWind=0.099999994;
@@ -1226,7 +1226,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="b_sl";
-					description="MEDEVAC Lider";
+					description="DUSTOFF Lider";
 				};
 				class Item1
 				{
@@ -1240,7 +1240,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="a_med";
-					description="MEDEVAC 2";
+					description="DUSTOFF 2";
 				};
 				class Item2
 				{
@@ -1254,7 +1254,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="b_med";
-					description="MEDEVAC 3";
+					description="DUSTOFF 3";
 				};
 				class Item3
 				{
@@ -1268,7 +1268,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="a_med2";
-					description="MEDEVAC 4";
+					description="DUSTOFF 4";
 				};
 			};
 		};

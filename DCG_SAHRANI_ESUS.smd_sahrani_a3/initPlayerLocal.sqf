@@ -9,7 +9,7 @@ if !(hasInterface) exitWith {}; // headless client exit
 
 #include "data\define.hpp"
 
-startLoadingScreen ["Loading DCG"];
+startLoadingScreen ["Cargando DCG"];
 
 waitUntil {sleep 0.1; SEN_complete > 0};
 
@@ -162,8 +162,8 @@ if (SEN_acreEnabled) then {
 			Defuse the bomb by cobra4v320"]
 	];
 	player createDiaryRecord ["Diary", ["DCG Mission Info", format ["<br/>
-		Author: SENSEI / Redited ny Piratajr<br/><br/>
-		Version: 3.0.9.2<br/><br/>
+		Author: SENSEI<br/><br/>
+		Version: 3.0.9<br/><br/>
 		Known Issues:<br/>
 		ACE_server.pbo overwrites ACE variables set by DCG. Recommend not to use ACE_server.pbo<br/>
 		ACE interaction menu may not initialize at mission start, ACE3 Github issue #1171<br/><br/>
@@ -177,8 +177,8 @@ if (SEN_acreEnabled) then {
 	sleep 2;
 	closeDialog 0;
 	_ret = [
-		parseText "<img size='3' valign='top' align='center' image='media\SEN_imgLogo.paa'/><br/><br/><t align='center'>Bienvenido a DCG ESUS.</t><br/><br/><t align='center'>Version: 3.0.9.1</t><br/>",
-		"Bienvenido a DCG ESUS",
+		parseText "<img size='3' valign='top' align='center' image='media\esusmain.paa'/><br/><br/><t align='center'>Bienvenido a DCG SAHRANI ESUS v0.2</t><br/><br/>",
+		"Bienvenido a DCG Sahrani v0.2",
 		"Manual",
 		"Continuar"
 	] call bis_fnc_GUImessage;
@@ -186,5 +186,5 @@ if (SEN_acreEnabled) then {
 };
 /*sleep 10;
 [{
-	hintSilent "DCG 3.0.9 RC3\nRELEASE CANDIDATE FOR PRIVATE USE ONLY!";
+	hintSilent "DCG 3.0.9.1 RC3\nRELEASE CANDIDATE FOR PRIVATE USE ONLY!";
 }, 600, []] call CBA_fnc_addPerFrameHandler;*/
