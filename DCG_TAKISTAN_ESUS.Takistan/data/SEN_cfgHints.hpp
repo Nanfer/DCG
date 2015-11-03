@@ -29,7 +29,7 @@ class SEN_hint
     {
         arguments[] = {};
         displayName = "Consejos";
-        description = "%1%2Los medicos civiles, en el centro medico Dodge,pueden curar cumpletamente a los jugadores.%1%2Para mover una unidad IA, la unidad tiene que estar retenida con precinto.%1%2Las misiones con el icono "C" representan misiones civiles.%1%2Algunas misiones solo aparecen si el FOB Pirelli esta desplegado.%1%2El seguro del arma se pone automaticamente al estar en el MOB Dodge.";
+        description = "%1%2Los medicos civiles, en el centro medico Dodge,pueden curar cumpletamente a los jugadores.%1%2Para mover una unidad IA, la unidad tiene que estar retenida con precinto.%1%2Las misiones con el icono ""C"" representan misiones civiles.%1%2Algunas misiones solo aparecen si el FOB Pirelli esta desplegado.%1%2El seguro del arma se pone automaticamente al estar en el MOB Dodge.";
         tip = "";
         image = "media\SEN_imgLogoSquare.paa";
         noImage = false;
