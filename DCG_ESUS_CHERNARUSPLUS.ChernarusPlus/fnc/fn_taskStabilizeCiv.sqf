@@ -22,7 +22,7 @@ if (_pos isEqualTo []) exitWith {
 
 _taskID = format["%1_stabilize_civ",SEN_taskCounterCiv];
 _taskText = "Atención medica";
-_taskDescription = format["Reconocmiento aero muestra ataques enemigos sobre la poblacion civil de (%1) cerca %2. Las autoridades locales solicitan el traslado de los heridos al centro médico de base. Esta importante tarea pondra de nuestro lado a la poblacion civil de la zona.",mapGridPosition _pos, text _town];
+_taskDescription = format["Reconocimiento aereo muestra ataques enemigos sobre la poblacion civil de (%1) cerca %2. Las autoridades locales solicitan el traslado de los heridos al centro médico de base. Esta importante tarea pondra de nuestro lado a la poblacion civil de la zona.",mapGridPosition _pos, text _town];
 
 _ambush = false;
 _wreckArray = ["Land_Wreck_Truck_dropside_F","Land_Wreck_Truck_F","Land_Wreck_UAZ_F","Land_Wreck_Ural_F","Land_Wreck_Van_F","Land_Wreck_Skodovka_F","Land_Wreck_CarDismantled_F","Land_Wreck_Car3_F","Land_Wreck_Car_F"];

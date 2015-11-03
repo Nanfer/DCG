@@ -40,7 +40,8 @@ class Mission
 		"A3_Structures_F_Mil_Flags",
 		"A3_Soft_F_MRAP_01",
 		"dz_worlds_chernarusplus_world",
-		"RHS_US_A2_AirImport"
+		"RHS_US_A2_AirImport",
+		"A3_Modules_F_GroupModifiers"
 	};
 	addOnsAuto[]=
 	{
@@ -115,7 +116,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={4809.5879,339,10283.536};
+					position[]={4809.5488,339,10284.08};
 					azimut=410.733;
 					special="NONE";
 					id=0;
@@ -1215,7 +1216,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={4816.0366,339,10279.407};
+					position[]={4820.0313,339,10285.13};
 					azimut=759.495;
 					special="NONE";
 					id=41;
@@ -1230,7 +1231,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={4815.8105,339,10277.547};
+					position[]={4819.8052,339,10283.27};
 					azimut=759.495;
 					special="NONE";
 					id=42;
@@ -1244,7 +1245,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={4817.396,339,10278.098};
+					position[]={4821.3906,339,10283.82};
 					azimut=759.495;
 					special="NONE";
 					id=43;
@@ -1258,7 +1259,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={4814.4194,339,10279.203};
+					position[]={4818.4141,339,10284.926};
 					azimut=759.495;
 					special="NONE";
 					id=44;
