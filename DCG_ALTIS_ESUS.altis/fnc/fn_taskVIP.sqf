@@ -14,8 +14,8 @@ if !(isServer) exitWith {};
 private ["_taskID","_taskText","_taskDescription","_houseArray","_pos","_grp1","_unit","_grpArray","_vehArray","_grp2","_mrk"];
 
 _taskID = "vip";
-_taskText = "Rescue VIP";
-_taskDescription = "We have intel that the son of a local elder has been taken hostage by enemy forces.<br/><br/>Locate the VIP and safely return him to headquarters at MOB Dodge.";
+_taskText = "Rescatar al VIP";
+_taskDescription = "Nuestra informacion indica que el hijo de un lider local ha sido secuestrado por el enemigo.<br/><br/>Encuentre al VIP y trasladelo al cuartel general en FOB Dodge.";
 
 _houseArray = [];
 _pos = [];
