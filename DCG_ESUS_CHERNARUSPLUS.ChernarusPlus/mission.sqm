@@ -126,12 +126,11 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="plt_co";
-					init="this setGroupId [""Uniform""];";
-					description="Lider Global";
+					description="UNIFORM - Lider Global ";
 				};
 				class Item1
 				{
-					position[]={4807.6187,339,10282.236};
+					position[]={4807.9189,339,10281.961};
 					azimut=410.733;
 					special="NONE";
 					id=1;
@@ -141,7 +140,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="plt_sgt";
-					description="Platoon Sergeant / FAC";
+					description="UNIFORM - RTO";
 				};
 				class Item2
 				{
@@ -159,7 +158,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={4805.9058,339,10283.567};
+					position[]={4806.9658,339,10284.449};
 					azimut=410.733;
 					special="NONE";
 					id=3;
@@ -243,7 +242,7 @@ class Mission
 					special="NONE";
 					id=8;
 					side="WEST";
-					vehicle="B_Soldier_A_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -335,7 +334,7 @@ class Mission
 					special="NONE";
 					id=14;
 					side="WEST";
-					vehicle="B_Soldier_A_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -519,7 +518,7 @@ class Mission
 					special="NONE";
 					id=26;
 					side="WEST";
-					vehicle="B_Soldier_A_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -1216,7 +1215,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={4815.4351,339,10278.825};
+					position[]={4816.0366,339,10279.407};
 					azimut=759.495;
 					special="NONE";
 					id=41;
@@ -1227,12 +1226,11 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="b_sl";
-					init="this setGroupid [""MEDEVAC""];";
-					description="Bravo Squad Leader";
+					description="MEDEVAC Lider";
 				};
 				class Item1
 				{
-					position[]={4815.7524,339,10275.995};
+					position[]={4815.8105,339,10277.547};
 					azimut=759.495;
 					special="NONE";
 					id=42;
@@ -1246,7 +1244,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={4816.9888,339,10276.974};
+					position[]={4817.396,339,10278.098};
 					azimut=759.495;
 					special="NONE";
 					id=43;
@@ -1260,7 +1258,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={4814.5742,339,10276.954};
+					position[]={4814.4194,339,10279.203};
 					azimut=759.495;
 					special="NONE";
 					id=44;
@@ -3161,7 +3159,7 @@ class Mission
 			vehicle="Flag_NATO_F";
 			skill=0.60000002;
 			text="SEN_flagMOB";
-			init="this allowDamage false; this setFlagTexture ""media\SEN_imgLogo.paa"";";
+			init="this allowDamage false; this setFlagTexture ""media\esusflag.jpg"";";
 		};
 		class Item175
 		{
@@ -3171,7 +3169,7 @@ class Mission
 			vehicle="Flag_NATO_F";
 			skill=0.60000002;
 			text="SEN_flagFOB";
-			init="this allowDamage false; this setFlagTexture ""media\SEN_imgLogo.paa"";";
+			init="this allowDamage false; this setFlagTexture ""media\esusflag.jpg"";";
 		};
 		class Item176
 		{

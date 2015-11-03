@@ -9,7 +9,7 @@ if !(hasInterface) exitWith {}; // headless client exit
 
 #include "data\define.hpp"
 
-startLoadingScreen ["Loading DCG"];
+startLoadingScreen ["Cargando DCG"];
 
 waitUntil {sleep 0.1; SEN_complete > 0};
 
@@ -177,14 +177,14 @@ if (SEN_acreEnabled) then {
 	sleep 2;
 	closeDialog 0;
 	_ret = [
-		parseText "<img size='3' valign='top' align='center' image='media\SEN_imgLogo.paa'/><br/><br/><t align='center'>Please refer to the Field Manual in your ACE interaction menu for mission details.</t><br/><br/><t align='center'>Installed Version: 3.0.9</t><br/><t align='center'><a color='#FFCC66' href='https://www.dropbox.com/sh/k1ykwhw8wgvfmir/AADfOghkU3jLi0G9IWj8VGCva?dl=0'>Click Here for Download Archive</a></t>",
-		"Welcome to Dynamic Combat Generator",
-		"Field Manual",
-		"Continue"
+		parseText "<img size='3' valign='top' align='center' image='media\esusmain.paa'/><br/><br/><t align='center'>Bienvenido a DCG Chernarus + ESUS v0.1</t><br/><br/>",
+		"Bienvenido a DCG Chernarus",
+		"Manual",
+		"Continuar"
 	] call bis_fnc_GUImessage;
 	if (_ret) then {(findDisplay 46) createDisplay "RscDisplayFieldManual"};
 };
 /*sleep 10;
 [{
-	hintSilent "DCG 3.0.9 RC3\nRELEASE CANDIDATE FOR PRIVATE USE ONLY!";
+	hintSilent "DCG 3.0.9.1 RC3\nRELEASE CANDIDATE FOR PRIVATE USE ONLY!";
 }, 600, []] call CBA_fnc_addPerFrameHandler;*/

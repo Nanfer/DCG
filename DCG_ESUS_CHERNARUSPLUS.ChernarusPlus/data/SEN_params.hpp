@@ -83,7 +83,7 @@ class param_SEN_occupiedEnemyCount {
    title = "Occupied Location Enemy Count";
    values[] = {20,40};
    texts[] = {"Low", "High"};
-   default = 20;
+   default = 40;
    SEN_paramCode = "SEN_occupiedEnemyCount = %1;";
    SEN_paramBoolean = 0;
    SEN_paramPublic = 0;
@@ -173,7 +173,7 @@ class param_ACE_reviveTime {
    title = "Max Revive Time (minutes)";
    values[] = {60,300,600,900};
    texts[] = {"1","5","10","15"};
-   default = 600;
+   default = 900;
    SEN_paramCode = "ace_medical_maxReviveTime = %1;";
    SEN_paramBoolean = 0;
    SEN_paramPublic = 1;
@@ -182,7 +182,7 @@ class param_ACE_preventInstaDeath {
    title = "Prevent Instant Death";
    values[] = {0,1};
    texts[] = {"Off","On"};
-   default = 0;
+   default = 1;
    SEN_paramCode = "ace_medical_preventInstaDeath = %1;";
    SEN_paramBoolean = 1;
    SEN_paramPublic = 1;
@@ -209,7 +209,7 @@ class param_ACE_PAKLocal {
    title = "Personal Aid Kit Usage Location *";
    values[] = {0,1,2,3,4};
    texts[] = {"Anywhere","Medical Vehicles","Medical Facilities","Medical Vehicles and Facilities","Disabled"};
-   default = 0;
+   default = 3;
    SEN_paramCode = "ace_medical_useLocation_PAK = %1;";
    SEN_paramBoolean = 0;
    SEN_paramPublic = 1;

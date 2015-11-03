@@ -20,7 +20,7 @@ _spawnPos = [0,0,0];
 _coPilot = objNull;
 
 if !(GET_TRANSPORTREADY) exitWith {
-	"Transport is not available." remoteExecCall ["hintSilent", owner _requestor, false];
+	"Transporte no disponible." remoteExecCall ["hintSilent", owner _requestor, false];
 };
 missionNamespace setVariable ["SEN_transportResponse", nil];
 SET_TRANSPORTNOTREADY
@@ -134,7 +134,7 @@ deleteVehicle _helipad;
 waitUntil {uiSleep 1; (isPlayer (_transport turretUnit [0]) || time > (_t + 180))};
 
 if !(isPlayer (_transport turretUnit [0])) exitWith {
-	"Transport HLZ not selected. Transport returning to base." remoteExecCall ["hintSilent", crew _transport, false];
+	"HLZ no seleccionada. Volviendo a HQ." remoteExecCall ["hintSilent", crew _transport, false];
 	{if (isPlayer _x) then {moveOut _x}} forEach (crew _transport);
 	_transport doMove [0,0,0];
 
@@ -146,7 +146,7 @@ if !(isPlayer (_transport turretUnit [0])) exitWith {
 	uiSleep 5;
 	deleteVehicle _pilot;
 	deleteVehicle _transport;
-	uiSleep 300;
+	uiSleep 60;
 	SET_TRANSPORTREADY
 };
 
@@ -159,7 +159,7 @@ waitUntil {uiSleep 1; !isNil "SEN_transportResponse"};
 _pos = missionnamespace getVariable ["SEN_transportResponse", []];
 
 if (_pos isEqualTo []) exitWith {
-	"Transport HLZ not selected. Transport returning to base." remoteExecCall ["hintSilent", crew _transport, false];
+	"HLZ no seleccionada. Volviendo a HQ." remoteExecCall ["hintSilent", crew _transport, false];
 	{if (isPlayer _x) then {moveOut _x}} forEach (crew _transport);
 	_transport doMove [0,0,0];
 
@@ -171,7 +171,7 @@ if (_pos isEqualTo []) exitWith {
 	uiSleep 5;
 	deleteVehicle _pilot;
 	deleteVehicle _transport;
-	uiSleep 300;
+	uiSleep 60;
 	SET_TRANSPORTREADY
 };
 
@@ -215,5 +215,5 @@ missionNameSpace setVariable ["SEN_transportReady", -1];
 uiSleep 5;
 {deleteVehicle _x} forEach (crew _transport);
 deleteVehicle _transport;
-uiSleep 300;
+uiSleep 60;
 SET_TRANSPORTREADY
