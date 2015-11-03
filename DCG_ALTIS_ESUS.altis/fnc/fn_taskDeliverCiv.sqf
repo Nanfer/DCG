@@ -16,8 +16,8 @@ private ["_targetTown","_taskID","_taskText","_taskDescription","_count","_aidAr
 _targetTown = SEN_whitelistLocation select floor (random (count SEN_whitelistLocation));
 
 _taskID = format["%1_deliver_civ",SEN_taskCounterCiv];
-_taskText = "Deliver Supplies";
-_taskDescription = format["The enemy occupation has left the locals in distress. The townspeople of %1 (%2) desparately need medical supplies.<br/><br/>Collect the supplies from the MOB Depot and deliver them to %1.",text _targetTown,mapGridPosition (getpos _targetTown)];
+_taskText = "Entregar los suministros";
+_taskDescription = format["La ocupacion enemiga ha dejado a la poblacion local en la miseria. La pobalcion de %1 (%2) necesita desesperadamente suministros médicos.<br/><br/>Cargue los suministros para su transporte y entregelos en %1.",text _targetTown,mapGridPosition (getpos _targetTown)];
 
 _count = 3;
 _aidArray = [];
