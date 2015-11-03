@@ -34,7 +34,7 @@ _pos1 = [];
 _pos2 = [];
 
 _taskID = "defuse";
-_taskText = "Defuse Explosives";
+_taskText = "Desactivar el explosivo";
 _taskDescription = format["La informacion obtenida del enemigo detalla el despliegue de IEDs en la zona de operaciones. %1 (%2). Si los explosivos improvisados estallan, civiles inocentes moriran; no podemos permitirlo.<br/><br/>Encuentre el codigo de desactivación en la zona designada y desactive el detonador.",_townName,mapGridPosition _townPos];
 
 // A2 map compatibility
