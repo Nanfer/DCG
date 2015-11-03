@@ -19,8 +19,8 @@ class SEN_hint
     class SEN_overview
     {
         arguments[] = {};
-        displayName = "Mission Overview";
-        description = "Dynamic Combat Generator uses towns, cities and capitals as the basis for its systems.%1At the start of the mission, enemy forces occupy a number of locations; they properly fortify and patrol the area based on the type of settlement.%1%1One of the occupied locations contains an enemy officer with valuable intel. The first objective is to gather said intel.%1%1From this point, DCG will generate a number of tasks based on the officer's information. Alongside the main tasks are civilian tasks that can influence the player's reputation with the locals.";
+        displayName = "Información de la mision";
+        description = "Dynamic Combat Generator usa pueblos, ciudades y capitales como base para su sistema.%1Al inicio de la mision, las fuerzas enemigas ocupan un numero de localizaciones; se fortifican y montan patrullas en base al tipo de asentamiento que sea.%1%1Una de las localizaciones ocupadas contiene un oficial enemigo con INTEL importante. El primer objetivo es tomar la citada INTEL.%1%1Desde aqui, DCG generara un numero de misiones en base a la informcion del oficial. Junto a las misiones principales hay misiones de civiles que pueden influir en la reputacion de las fuerzas BLUFOR con los locales.";
         tip = "";
         image = "media\SEN_imgLogoSquare.paa";
         noImage = false;
@@ -28,8 +28,8 @@ class SEN_hint
     class SEN_tip
     {
         arguments[] = {};
-        displayName = "Mission Tips";
-        description = "%1%2The civilian doctors at Dodge Medical Center can fully heal players.%1%2In order to move an AI unit, the unit must be detained using cable ties.%1%2Tasks with the ""C"" icon represent civilian tasks.%1%2Some task related scenarios only occur if FOB Pirelli is deployed.%1%2Your weapon safety is engaged automatically while at MOB Dodge.";
+        displayName = "Consejos";
+        description = "%1%2Los medicos civiles, en el centro medico Dodge,pueden curar cumpletamente a los jugadores.%1%2Para mover una unidad IA, la unidad tiene que estar retenida con precinto.%1%2Las misiones con el icono "C" representan misiones civiles.%1%2Algunas misiones solo aparecen si el FOB Pirelli esta desplegado.%1%2El seguro del arma se pone automaticamente al estar en el MOB Dodge.";
         tip = "";
         image = "media\SEN_imgLogoSquare.paa";
         noImage = false;
@@ -37,7 +37,7 @@ class SEN_hint
     class SEN_addon
     {
         arguments[] = {};
-        displayName = "Addon Integration";
+        displayName = "Addons necesarios";
         description = "%1%2ACE3 (depencency)%1%2ACRE2%1%2Task Force Arrowhead Radio%1%2RHS:USAF%1%2RHS:AFRF%1%2Leights OPFOR%1%2All Third Party Unitpacks (via \userconfig\dcg\sen_unitpools.sqf)";
         tip = "";
         image = "media\SEN_imgLogoSquare.paa";
@@ -91,8 +91,8 @@ class SEN_hint
     class SEN_logistics
     {
         arguments[] = {};
-        displayName = "Logistics";
-        description = "Players have the option to construct an FOB away from MOB Dodge. FOB Pirelli has transportation and medical capabilities that can be accessed by the player constructing the FOB.%1%1Only one player may have control over FOB construction, however, players can request control through the ACE interaction menu.%1%1FOB Pirelli allows quick transportation to and from MOB Dodge.%1%1FOB Pirelli can be dismantled from the laptop in the headquarters at MOB Dodge.%1%1If a HQ is placed at FOB Pirelli%1%2Aerial recon will periodically mark enemies within a certain distance.%1%2Civilian approval is influenced by FOB Pirelli.%1%1If a vehicle cover is placed at FOB Pirelli%1%2The FOB will have vehicular capabilities.%1%1If a helipad is placed at FOB Pirelli%1%2Friendly AI will reinforce the FOB.";
+        displayName = "Logistica";
+        description = "Los jugadores tienen la opcion de construir un FOB lejos del MOB Dodge. El FOB Pirelli tiene transporte y capacidad de asistencia medica que se puede acceder a traves de la construccion de los edificios por los jugadores.%1%1Solo un jugador puede tener el control sobre la construccion del FOB, aunque todos los jugadores pueden solicitar el control del mismo a traves del menu de interaccion de ACE.%1%1El FOB Pirelli permite el teletransporte desde y hacia el MOB Dodge.%1%1El FOB Pirelli puede ser desmantelado a traves de un ordenador portatil en el HQ del MOB Dodge.%1%1Si hay un HQ desplegado en el FOB Pirelli%1%2El reconomiciento aereo ira periodicamente marcando enemigos que se encuentren a cierta distancia.%1%2La aprobacion civil se ve influida por el FOB Pirelli.%1%1Si hay una cobertura de vehiculo en el FOB Pirelli%1%2El FOB tendra capacidades vehiculares.%1%1Si hay un helipad posicionado en el FOB Pirelli%1%2IA BLUFOR reforzara el FOB.";
         tip = "If a player disconnects while in control of FOB Pirelli, the next player to request control will take over.%1The Enemy Patrol mission parameter must be on to allow aerial recon.%1Players periodically gain a bonus to civilian approval based on FOB Pirelli's readiness.";
         image = "media\SEN_imgLogoSquare.paa";
         noImage = false;
@@ -100,9 +100,9 @@ class SEN_hint
     class SEN_transportation
     {
         arguments[] = {};
-        displayName = "Transportation";
-        description = "Players can request an air transport at any time during the mission through the ACE interaction menu.%1%1The requestor (player that initiated transport request) must select a suitable position via the map. Once the position is selected, a transport will move to said position and wait for %3any%4 player to occupy the copilot seat.%1%1Next, the copilot must select a suitable position and the transport will move to the destination.";
-        tip = "If a transport is destroyed, another will be available after a short time.";
+        displayName = "Transporte";
+        description = "Los jugadores pueden solicitar transporte aereo en cualquier momento durante la mision a traves del menu de interaccion de ACE.%1%1El solicitante (el jugador que haya iniciado la solicitud de transporte) debe seleccionar una posicion adecuada a traves del mapa. Una vez la posicion esta seleccionada, un transporte se movera a la posicion y esperara a que %3cualquier%4 jugador ocupe la posicion de copiloto.%1%1Seguido, el copiloto debe seleccionar una posicion adecuada y el transporte se movera al destino seleccionado.";
+        tip = "Si el transporte es destruido, otro transporte estara disponible al paso de un rato.";
         image = "media\SEN_imgLogoSquare.paa";
         noImage = false;
     };
