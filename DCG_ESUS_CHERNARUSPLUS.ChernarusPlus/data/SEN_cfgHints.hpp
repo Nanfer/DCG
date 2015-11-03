@@ -17,7 +17,7 @@ class SEN_hint
 {
     displayName = "Dynamic Combat Generator"; // display name for main class doesn't work. appears as <Mission> in Field Manual
     class SEN_overview
-    {
+	{
         arguments[] = {};
         displayName = "Información de la mision";
         description = "Dynamic Combat Generator usa pueblos, ciudades y capitales como base para su sistema.%1Al inicio de la mision, las fuerzas enemigas ocupan un numero de localizaciones; se fortifican y montan patrullas en base al tipo de asentamiento que sea.%1%1Una de las localizaciones ocupadas contiene un oficial enemigo con INTEL importante. El primer objetivo es tomar la citada INTEL.%1%1Desde aqui, DCG generara un numero de misiones en base a la informcion del oficial. Junto a las misiones principales hay misiones de civiles que pueden influir en la reputacion de las fuerzas BLUFOR con los locales.";
@@ -29,7 +29,7 @@ class SEN_hint
     {
         arguments[] = {};
         displayName = "Consejos";
-        description = "%1%2Los medicos civiles, en el centro medico Dodge,pueden curar cumpletamente a los jugadores.%1%2Para mover una unidad IA, la unidad tiene que estar retenida con precinto.%1%2Las misiones con el icono "C" representan misiones civiles.%1%2Algunas misiones solo aparecen si el FOB Pirelli esta desplegado.%1%2El seguro del arma se pone automaticamente al estar en el MOB Dodge.";
+        description = "%1%2Los medicos civiles, en el centro medico Dodge,pueden curar cumpletamente a los jugadores.%1%2Para mover una unidad IA, la unidad tiene que estar retenida con precinto.%1%2Las misiones con el icono ""C"" representan misiones civiles.%1%2Algunas misiones solo aparecen si el FOB Pirelli esta desplegado.%1%2El seguro del arma se pone automaticamente al estar en el MOB Dodge.";
         tip = "";
         image = "media\SEN_imgLogoSquare.paa";
         noImage = false;

@@ -154,7 +154,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="plt_med";
-					description="Platoon Medic";
+					description="UNIFORM - Medico";
 				};
 				class Item3
 				{
@@ -168,7 +168,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="plt_eng";
-					description="Platoon Engineer";
+					description="UNIFORM - Ingeniero";
 				};
 			};
 		};
@@ -191,7 +191,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="a1_ftl";
-					description="Alpha 1 Fireteam Leader";
+					description="Alfa 1 Lider";
 				};
 				class Item1
 				{
@@ -205,7 +205,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="a1_ar";
-					description="Alpha 1 Automatic Rifleman";
+					description="Alfa 1 MG";
 				};
 				class Item2
 				{
@@ -219,7 +219,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="a1_aar";
-					description="Alpha 1 Assistant Automatic Rifleman";
+					description="Alfa 1 Granadero";
 				};
 				class Item3
 				{
@@ -233,7 +233,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="a1_at";
-					description="Alpha 1 Anti-Tank Rifleman";
+					description="Alfa 1 AT";
 				};
 				class Item4
 				{
@@ -247,7 +247,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="a1_ab";
-					description="Alpha 1 Ammo Bearer";
+					description="Alfa 1 Medico";
 				};
 				class Item5
 				{
@@ -260,7 +260,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="a1_rm";
-					description="Alpha 1 Rifleman / LAT";
+					description="Alfa 1 Fusilero";
 				};
 			};
 		};
@@ -283,7 +283,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="a2_ftl";
-					description="Alpha 2 Fireteam Leader";
+					description="Bravo 2 Lider";
 				};
 				class Item1
 				{
@@ -297,7 +297,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="a2_ar";
-					description="Alpha 2 Automatic Rifleman";
+					description="Bravo 2 MG";
 				};
 				class Item2
 				{
@@ -311,7 +311,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="a2_aar";
-					description="Alpha 2 Assistant Automatic Rifleman";
+					description="Bravo 2 Granadero";
 				};
 				class Item3
 				{
@@ -325,7 +325,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="a2_at";
-					description="Alpha 2 Anti-Tank Rifleman";
+					description="Bravo 2 AT";
 				};
 				class Item4
 				{
@@ -339,7 +339,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="a2_ab";
-					description="Alpha 2 Ammo Bearer";
+					description="Bravo 2 Medico";
 				};
 				class Item5
 				{
@@ -352,7 +352,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="a2_rm";
-					description="Alpha 2 Rifleman / LAT";
+					description="Bravo 2 Fusilero";
 				};
 			};
 		};
@@ -375,7 +375,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="b1_ftl";
-					description="Bravo 1 Fireteam Leader";
+					description="Charlie 3 Lider";
 				};
 				class Item1
 				{
@@ -389,7 +389,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="b1_ar";
-					description="Bravo 1 Automatic Rifleman";
+					description="Charlie 3 MG";
 				};
 				class Item2
 				{
@@ -403,7 +403,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="b1_aar";
-					description="Bravo 1 Assistant Automatic Rifleman";
+					description="Charlie 3 Granadero";
 				};
 				class Item3
 				{
@@ -417,7 +417,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="b1_at";
-					description="Bravo 1 Anti-Tank Rifleman";
+					description="Charlie 3 AT";
 				};
 				class Item4
 				{
@@ -431,7 +431,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="b1_ab";
-					description="Medico";
+					description="Charlie 3 Medico";
 				};
 				class Item5
 				{
@@ -444,7 +444,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b1_rm";
-					description="Bravo 1 Rifleman / LAT";
+					description="Charlie 3 Fusilero";
 				};
 			};
 		};
@@ -467,7 +467,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="b2_ftl";
-					description="Bravo 2 Fireteam Leader";
+					description="DAGGER  Lider";
 				};
 				class Item1
 				{
@@ -481,7 +481,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="b2_ar";
-					description="Bravo 2 Automatic Rifleman";
+					description="DAGGER MG";
 				};
 				class Item2
 				{
@@ -495,7 +495,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="b2_aar";
-					description="Bravo 2 Assistant Automatic Rifleman";
+					description="DAGGER Tirador selecto";
 				};
 				class Item3
 				{
@@ -509,7 +509,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="b2_at";
-					description="Bravo 2 Anti-Tank Rifleman";
+					description="DAGGER AT";
 				};
 				class Item4
 				{
@@ -523,7 +523,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="b2_ab";
-					description="Bravo 2 Ammo Bearer";
+					description="DAGGER Medico";
 				};
 				class Item5
 				{
@@ -536,7 +536,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b2_rm";
-					description="Bravo 2 Rifleman / LAT";
+					description="DAGGER Fusilero";
 				};
 			};
 		};
@@ -559,7 +559,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="rh1_co";
-					description="Rhino 1 Commander";
+					description="Rhino 1 Lider";
 				};
 				class Item1
 				{
@@ -573,7 +573,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="rh1_driver";
-					description="Rhino 1 Driver";
+					description="Rhino 1 Conductor";
 				};
 				class Item2
 				{
@@ -587,7 +587,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="rh1_gunner";
-					description="Rhino 1 Gunner";
+					description="Rhino 1 Artillero";
 				};
 			};
 		};
@@ -1240,7 +1240,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="a_med";
-					description="Alpha Squad Medic";
+					description="MEDEVAC 2";
 				};
 				class Item2
 				{
@@ -1254,7 +1254,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="b_med";
-					description="Bravo Squad Medic";
+					description="MEDEVAC 3";
 				};
 				class Item3
 				{
@@ -1268,7 +1268,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="a_med2";
-					description="Alpha Squad Leader";
+					description="MEDEVAC 4";
 				};
 			};
 		};
