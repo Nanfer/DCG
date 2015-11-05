@@ -8,11 +8,11 @@ Description:  sends request for FOB control
 Return: nothing
 __________________________________________________________________*/
 if (getMarkerColor "sen_fob_mrk" isEqualTo "") exitWith {
-	hintSilent "You must deploy FOB Pirelli before requesting control.";
+	hintSilent "Debes desplegar el FOB Pirelli antes de solicitar permisos de edicion.";
 };
 
 if (player isEqualTo (getAssignedCuratorUnit SEN_curatorFOB)) exitWith {
-	hintSilent "You already control FOB Pirelli.";
+	hintSilent "Controlas actualmente el FOB.";
 };
 
 //player setVariable ["SEN_inProgress",true];

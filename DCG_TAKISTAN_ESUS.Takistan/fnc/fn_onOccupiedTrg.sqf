@@ -41,7 +41,7 @@ _threshold = round ((count _enemyArray)*0.30);
 
 	if ({alive _x} count _enemyArray <= _threshold) exitWith {
 		[_id] call CBA_fnc_removePerFrameHandler;
-		_hint = format ["The enemy is losing control of %1! Keep up the fight and they will surrender!",text _town];
+		_hint = format ["El enemigo esta perdiendo el control de %1! ¡Seguid presionando!",text _town];
 		_hint remoteExecCall ["hintSilent", allPlayers, false];
 		[{
 			params ["_args","_id"];
@@ -84,13 +84,13 @@ _threshold = round ((count _enemyArray)*0.30);
 				_mrk setMarkerColor "ColorWEST";
 				SEN_approvalCiv = SEN_approvalCiv + _approval;
 				publicVariable "SEN_approvalCiv";
-				["SEN_approvalBonus",[_approval,'Assisting the local population has increased your approval!']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
+				["SEN_approvalBonus",[_approval,'Ayudar a la poblacion local ha incrementado su aprobacion']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
 				if (GET_DEBUG) then {
 					(format["SEN_occupy_AO_%1",text _town]) setMarkerColor "ColorWEST";
 				};
 				if !(isNull SEN_officer) then {
 					if (getposATL SEN_officer distance _townPos < _radius) then {
-						_hint = format ["Aerial reconnaissance shows the enemy officer is somewhere in %1.",text _town];
+						_hint = format ["Reconocimiento aereo ha identificado a un oficial en %1.",text _town];
 						_hint remoteExecCall ["hintSilent", allPlayers, false];
 						["officer",getPosATL SEN_officer] call BIS_fnc_taskSetDestination;
 					};

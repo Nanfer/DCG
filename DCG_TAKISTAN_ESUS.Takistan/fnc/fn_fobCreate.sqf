@@ -14,11 +14,11 @@ _pos set [2,0];
 
 
 if (_pos distance2D (getMarkerPos "SEN_safezone_mrk") <= ((getMarkerSize "SEN_safezone_mrk") select 0)) exitWith {
-	hintSilent "Unsuitable position for FOB. Select an area away from MOB Dodge.";
+	hintSilent "Posicion invalida para el FOB. Seleccione un area fuera de MOB Dodge.";
 };
 
 if (count (_pos isFlatEmpty [1, 0, 0.5, 15, 0, false, player]) isEqualTo 0) exitWith {
-	hintSilent "Unsuitable position for FOB. Select a flat open area.";
+	hintSilent "Posicion invalida para el FOB. Seleccione un area plana.";
 };
 
 [
@@ -33,13 +33,13 @@ if (count (_pos isFlatEmpty [1, 0, 0.5, 15, 0, false, player]) isEqualTo 0) exit
 		}];
 		_key = (actionKeys "curatorInterface") select 0;
 		if (!isNil "_key") then {
-			hint format ["Press the Zeus key, %1, to construct FOB Pirelli.",keyName _key];
+			hint format ["Presione la tecla de Zeus, %1, para editar FOB Pirelli.",keyName _key];
 		} else {
-			hint format ["Press the Zeus key, %1, to construct FOB Pirelli.",'UNBOUND'];
+			hint format ["Presione la tecla de Zeus, %1, para editar FOB Pirelli.",'UNBOUND'];
 		};
 	},
 	{
 
 	},
-	"Deploying FOB Pirelli..."
+	"Desplegando FOB Pirelli..."
 ] call ace_common_fnc_progressBar;

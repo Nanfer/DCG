@@ -11,7 +11,7 @@ private ["_classname","_size","_pos","_isEmpty"];
 
 _classname = _this select 0;
 _size = _this select 1;
-hintSilent "Open your map and select a HLZ.";
+hintSilent "Abra el mapa y selecciona LZ.";
 missionNamespace setVariable ["SEN_transportResponse", nil];
 
 [player,_classname,_size] onMapSingleClick "
@@ -20,7 +20,7 @@ missionNamespace setVariable ["SEN_transportResponse", nil];
 	if !((_this select 0) getVariable ['SEN_inProgress',false]) then {
 		(_this select 0) setVariable ['SEN_inProgress',true];
 		if (surfaceIsWater _pos) then {
-			hintSilent 'Selected HLZ must be on land.';
+			hintSilent 'LZ debe estar en tierra.';
 			(_this select 0) setVariable ['SEN_inProgress',false];
 		} else {
 			_isEmpty = _pos isFlatEmpty [(_this select 2), 50, 0.6, (_this select 2), 0, false, (_this select 0)];
@@ -29,10 +29,10 @@ missionNamespace setVariable ["SEN_transportResponse", nil];
 				missionNamespace setVariable ['SEN_transportResponse', _isEmpty];
 				publicVariableServer 'SEN_transportResponse';
 				onMapSingleClick '';
-				hintSilent 'HLZ selected.';
+				hintSilent 'LZ Seleccionada.';
 				(_this select 0) setVariable ['SEN_inProgress',false];
 			} else {
-				hintSilent 'Unsuitable terrain for transport. Select another HLZ.';
+				hintSilent 'Terreno inviable para transporte. Selecciona otra LZ.';
 				(_this select 0) setVariable ['SEN_inProgress',false];
 			};
 
@@ -49,7 +49,7 @@ missionNamespace setVariable ["SEN_transportResponse", nil];
 	};
 	if (diag_tickTime >= _time && {isNil "SEN_transportResponse"}) exitWith {
 		[_id] call CBA_fnc_removePerFrameHandler;
-		hintSilent "Transport request canceled.";
+		hintSilent "Peticion de transporte cancelada.";
 		player setVariable ['SEN_inProgress',false];
 		missionNamespace setVariable ['SEN_transportResponse', []];
 		publicVariableServer 'SEN_transportResponse';

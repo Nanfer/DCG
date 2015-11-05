@@ -20,7 +20,7 @@ if (player getvariable ["SEN_commNet",""] isEqualTo "command") exitWith {
 	[(call TFAR_fnc_activeSwRadio), SEN_tfar_ch_sw] call TFAR_fnc_setSwChannel;
 	[(call TFAR_fnc_activeSwRadio), SEN_tfar_add_sw] call TFAR_fnc_setAdditionalSwChannel;
 	[(call TFAR_fnc_ActiveSWRadio), tf_default_radioVolume] call TFAR_fnc_setSwVolume;
-	hintSilent format["%1:\nYou have access to COMMAND and SQUAD communications network.",_role];
+	hintSilent format["%1:\nAcceso a la comunicaciones de MANDO y EQUIPO concedidas.",_role];
 };
 
 if (player getvariable ["SEN_commNet",""] isEqualTo "support") exitWith {
@@ -35,7 +35,7 @@ if (player getvariable ["SEN_commNet",""] isEqualTo "support") exitWith {
 	[(call TFAR_fnc_activeLrRadio) select 0, (call TFAR_fnc_activeLrRadio) select 1, SEN_tfar_ch_lr] call TFAR_fnc_setLrChannel;
 	[(call TFAR_fnc_ActiveSWRadio), tf_default_radioVolume] call TFAR_fnc_setSwVolume;
 	[(call TFAR_fnc_activeLrRadio) select 0, (call TFAR_fnc_activeLrRadio) select 1, tf_default_radioVolume] call TFAR_fnc_setLrVolume;
-	hintSilent format["%1:\nYou have access to SUPPORT and SQUAD communications network.",_role];
+	hintSilent format["%1:\nAcceso a la comunicaciones de SOPORTE y EQUIPO concedidas.",_role];
 };
 
 if (player getvariable ["SEN_commNet",""] isEqualTo "squad") exitWith {
@@ -44,5 +44,5 @@ if (player getvariable ["SEN_commNet",""] isEqualTo "squad") exitWith {
 	[(call TFAR_fnc_activeSwRadio), SEN_tfar_ch_sw] call TFAR_fnc_setSwChannel;
 	[(call TFAR_fnc_activeSwRadio), SEN_tfar_add_sw] call TFAR_fnc_setAdditionalSwChannel;
 	[(call TFAR_fnc_ActiveSWRadio), tf_default_radioVolume] call TFAR_fnc_setSwVolume;
-	hintSilent format["%1:\nYou have access to SQUAD communications network.",_role];
+	hintSilent format["%1:\nAcceso a la comunicacion de EQUIPO concedida.",_role];
 };

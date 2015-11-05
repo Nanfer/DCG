@@ -46,9 +46,9 @@ if (SEN_allowMod isEqualTo 1) then { // if modified content mission parameter is
 	} else { // if file doesn't exist or if file returns false, use preset unit pools. Supports RHS, LOP
 		["Building predefined unit pools."] call SEN_fnc_log;
 		// EAST and INDEPENDENT UNITS
-		_indPool = ["LOP_ISTS_Infantry_TL","LOP_ISTS_Infantry_SL","LOP_ISTS_Infantry_Medic","LOP_ISTS_Infantry_AR","LOP_ISTS_Infantry_AT","LOP_ISTS_Infantry_Engineer","LOP_ISTS_Soldier","LOP_ISTS_Infantry_GL"];
+		_indPool = ["rhs_g_Soldier_F","rhs_g_Soldier_lite_F","rhs_g_Soldier_AR_F","rhs_g_medic_F","rhs_g_engineer_F","rhs_g_Soldier_exp_F","rhs_g_Soldier_GL_F","rhs_g_Soldier_M_F","rhs_g_Soldier_LAT_F","rhs_g_Soldier_AA_F","rhs_g_Soldier_AAR_F","LOP_AFR_Infantry_Corpsman","LOP_AFR_Infantry_AR","LOP_AFR_Infantry_AT","LOP_AFR_Infantry_Marksman","LOP_AFR_Infantry_Rifleman","LOP_AFR_Infantry_GL"];
 		_eastPool = ["rhs_msv_junior_sergeant","rhs_msv_engineer","rhs_msv_medic","rhs_msv_LAT","rhs_msv_RShG2","rhs_msv_aa","rhs_msv_machinegunner","rhs_msv_grenadier","rhs_msv_efreitor","rhs_msv_marksman","LOP_US_Infantry_Corpsman","LOP_US_Infantry_MG","LOP_US_Infantry_Engineer","LOP_US_Infantry_Rifleman"];
-		_indVehPool = ["LOP_ISTS_Landrover","LOP_ISTS_Landrover_M2","LOP_ISTS_Offroad","LOP_ISTS_Offroad_M2","LOP_ISTS_Truck","LOP_ISTS_M113_W","LOP_ISTS_BTR60","LOP_ISTS_T72BA"];
+		_indVehPool = ["RHS_BM21_chdkz","rhs_zsu234_chdkz","rhs_bmd2_chdkz","rhs_btr70_chdkz","rhs_t72bb_chdkz","rhs_uaz_open_chdkz","LOP_AFR_BTR60","LOP_AFR_T72BA","LOP_AFR_M113_W","LOP_AM_Landrover_M2","LOP_AFR_Landrover_M2"];
 		_eastVehPool = ["rhs_tigr_vdv","rhs_bmp1_vdv","rhs_bmp2e_vdv","rhs_t72bd_tv","rhs_t90_tv","rhs_btr80_vmf","rhs_btr80a_msv","rhs_t80b","LOP_US_ZSU234","RHS_UAZ_MSV_01","LOP_ChDKZ_Ural","LOP_ChDKZ_Ural_open"];
 		_indAirPool = ["LOP_UA_Mi8MTV3_FAB","LOP_UA_Mi8MTV3_UPK23"];
 		_eastAirPool = ["RHS_Ka52_vvsc","RHS_Ka52_vvs","RHS_Mi24P_vvs","RHS_Mi24P_AT_vvs"];
@@ -71,7 +71,7 @@ if (SEN_allowMod isEqualTo 1) then { // if modified content mission parameter is
 		// WEST UNITS
 		SEN_unitPoolWest = ["rhsusf_army_ucp_rifleman_101st","rhsusf_army_ucp_aa","rhsusf_army_ucp_javelin","rhsusf_army_ucp_autorifleman","rhsusf_army_ucp_medic","rhsusf_army_ucp_explosives","rhsusf_army_ucp_grenadier","rhsusf_army_ucp_marksman","rhsusf_army_ucp_teamleader"];
 		SEN_vehPoolWest = ["rhsusf_m1025_d_s_Mk19","rhsusf_m113_usarmy","rhsusf_m1025_w","rhsusf_m1025_w_m2"];
-		SEN_airPoolWest = ["RHS_CH_47F","RHS_UH1Y_UNARMED","RHS_UH60M","B_Heli_Transport_03_F","B_Heli_Transport_01_F","B_Heli_Light_01_F"];
+		SEN_airPoolWest = ["RHS_CH_47F","RHS_UH1Y_UNARMED","RHS_UH60M","RHS_UH60M_MEV_d"];
 		SEN_sniperPoolWest = ["rhsusf_army_ucp_sniper"];
 
 		// CIVILIAN UNITS
