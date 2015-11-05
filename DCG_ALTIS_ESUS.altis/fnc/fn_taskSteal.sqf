@@ -42,12 +42,12 @@ _deviceID = [[_device],{
 			{
 				SEN_taskSuccess = 1;
 				publicVariableServer "SEN_taskSuccess";
-				hintSilent "Información transferida.";
+				hintSilent "You've copied the device data.";
 			},
 			{
 
 			},
-			"Transfiriendo..."
+			"Searching Onboard Computer..."
 		] call ace_common_fnc_progressBar;
 	},{true}] call ace_interact_menu_fnc_createAction;
 	[(_this select 0), 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;

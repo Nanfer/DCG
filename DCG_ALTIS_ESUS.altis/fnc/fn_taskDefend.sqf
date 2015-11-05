@@ -77,7 +77,7 @@ SET_TASKWPOS(_taskID,_taskDescription,_taskText,_posCache,"Defend")
 			if (SEN_waveCount >= 3 && {count (units SEN_waveGrp) <= SEN_waveThreshold}) exitWith {
 				[_id] call CBA_fnc_removePerFrameHandler;
 				SET_FOBUNLOCK
-				[_taskID, "COMPLETADO"] call BIS_fnc_taskSetState;
+				[_taskID, "SUCCEEDED"] call BIS_fnc_taskSetState;
 				_cacheArray call SEN_fnc_cleanup;
 				_vehArray call SEN_fnc_cleanup;
 				(units _grpWest) call SEN_fnc_cleanup;
