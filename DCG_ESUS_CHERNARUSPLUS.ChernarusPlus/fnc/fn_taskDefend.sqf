@@ -14,7 +14,7 @@ if !(isServer) exitWith {};
 private ["_taskID","_taskText","_taskDescription","_townName","_townPos","_townSize","_avgTownSize","_defendTown","_posCache","_roads","_cacheArray","_vehArray","_cache","_pos","_dir","_transport","_grpWest","_posEnemy","_squad","_wp"];
 
 _taskID = "defend";
-_taskText = "Defiende los suministros";
+_taskText = "Defender suministros";
 _taskDescription = "";
 
 if (GET_FOBDEPLOYED) then {
