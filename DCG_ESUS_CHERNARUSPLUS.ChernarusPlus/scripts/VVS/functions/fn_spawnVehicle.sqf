@@ -28,7 +28,7 @@ if (isNil "_position") exitWith {
 closeDialog 0;
 player setVariable ["SEN_inProgress",false];
 
-{deleteVehicle _x} count (nearestObjects [_position,["landVehicle","Air","Ship","ThingX"],(7 max (ceil(sizeOf _className)))]);
+{deleteVehicle _x} count (nearestObjects [_position,["All","AllVehicles"],(7 max (ceil(sizeOf _className)))]);
 _cfgInfo = [_className] call VVS_fnc_cfgInfo;
 _vehicle = _className createVehicle [_position select 0,_position select 1,50];
 _vehicle setDir _direction;
@@ -37,7 +37,7 @@ if !(surfaceIsWater _position) then {
 } else {
 	_vehicle setPosASL _position;
 };
-_vehicle setVectorUp [0,0,1];
+_vehicle setVectorUp surfaceNormal position _vehicle;//_vehicle setVectorUp [0,0,1];
 _vehicle enableSimulationGlobal true; // test for exploding vehicle bug
 
 if((_cfgInfo select 4) isEqualTo "Autonomous") then {

@@ -14,8 +14,8 @@ if !(isServer) exitWith {};
 private ["_taskID","_taskText","_taskDescription","_town","_townPos","_officerID","_action"];
 
 _taskID = "officer";
-_taskText = "Locate Officer";
-_taskDescription = "A high ranking enemy officer will be traveling to an occupied settlement today.<br/><br/>Find the officer and gather any relevant intel.";
+_taskText = "Localizar al oficial";
+_taskDescription = "Un oficial de alto rango enemigo se encuentra en una población ocupada.<br/><br/>Encuentre al oficial y recoja toda la informacion que pueda.";
 
 _town = SEN_occupiedLocation select floor (random (count SEN_occupiedLocation));
 _townPos = getpos _town;
@@ -38,12 +38,12 @@ SEN_officer addEventHandler ["hit", {
 			{
 				SEN_taskSuccess = 1;
 				publicVariableServer "SEN_taskSuccess";
-				hintSilent "You found valuable intel.";
+				hintSilent "Has encontrado informacion.";
 			},
 			{
 
 			},
-			"Searching Officer..."
+			"Registrando..."
 		] call ace_common_fnc_progressBar;
 	},{true}] call ace_interact_menu_fnc_createAction;
 	[SEN_officer, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;

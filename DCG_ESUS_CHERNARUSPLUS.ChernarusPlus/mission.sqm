@@ -40,7 +40,8 @@ class Mission
 		"A3_Structures_F_Mil_Flags",
 		"A3_Soft_F_MRAP_01",
 		"dz_worlds_chernarusplus_world",
-		"RHS_US_A2_AirImport"
+		"RHS_US_A2_AirImport",
+		"A3_Modules_F_GroupModifiers"
 	};
 	addOnsAuto[]=
 	{
@@ -86,8 +87,8 @@ class Mission
 	randomSeed=9482434;
 	class Intel
 	{
-		briefingName="DCG_ESUS_CHERNARUSPLUS_V0.1";
-		overviewText="DCG ESUS Chernarus Plus v0.1";
+		briefingName="DCG_ESUS_CHERNARUSPLUS_V0.4";
+		overviewText="DCG ESUS Chernarus Plus v0.4";
 		resistanceWest=0;
 		startWeather=0.25;
 		startWind=0.099999994;
@@ -115,7 +116,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={4809.5879,339,10283.536};
+					position[]={4809.5488,339,10284.08};
 					azimut=410.733;
 					special="NONE";
 					id=0;
@@ -126,12 +127,11 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="plt_co";
-					init="this setGroupId [""Uniform""];";
-					description="Lider Global";
+					description="Uniform Lider Global ";
 				};
 				class Item1
 				{
-					position[]={4807.6187,339,10282.236};
+					position[]={4807.9189,339,10281.961};
 					azimut=410.733;
 					special="NONE";
 					id=1;
@@ -141,7 +141,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="plt_sgt";
-					description="Platoon Sergeant / FAC";
+					description="Uniform RTO";
 				};
 				class Item2
 				{
@@ -155,11 +155,11 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="plt_med";
-					description="Platoon Medic";
+					description="Uniform Medico";
 				};
 				class Item3
 				{
-					position[]={4805.9058,339,10283.567};
+					position[]={4806.9658,339,10284.449};
 					azimut=410.733;
 					special="NONE";
 					id=3;
@@ -169,7 +169,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="plt_eng";
-					description="Platoon Engineer";
+					description="Uniform Ingeniero";
 				};
 			};
 		};
@@ -192,7 +192,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="a1_ftl";
-					description="Alpha 1 Fireteam Leader";
+					description="Alfa 1 Lider";
 				};
 				class Item1
 				{
@@ -206,7 +206,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="a1_ar";
-					description="Alpha 1 Automatic Rifleman";
+					description="Alfa 1 MG";
 				};
 				class Item2
 				{
@@ -220,7 +220,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="a1_aar";
-					description="Alpha 1 Assistant Automatic Rifleman";
+					description="Alfa 1 Granadero";
 				};
 				class Item3
 				{
@@ -234,7 +234,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="a1_at";
-					description="Alpha 1 Anti-Tank Rifleman";
+					description="Alfa 1 AT";
 				};
 				class Item4
 				{
@@ -243,12 +243,12 @@ class Mission
 					special="NONE";
 					id=8;
 					side="WEST";
-					vehicle="B_Soldier_A_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="a1_ab";
-					description="Alpha 1 Ammo Bearer";
+					description="Alfa 1 Medico";
 				};
 				class Item5
 				{
@@ -261,7 +261,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="a1_rm";
-					description="Alpha 1 Rifleman / LAT";
+					description="Alfa 1 Fusilero";
 				};
 			};
 		};
@@ -284,7 +284,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="a2_ftl";
-					description="Alpha 2 Fireteam Leader";
+					description="Bravo 2 Lider";
 				};
 				class Item1
 				{
@@ -298,7 +298,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="a2_ar";
-					description="Alpha 2 Automatic Rifleman";
+					description="Bravo 2 MG";
 				};
 				class Item2
 				{
@@ -312,7 +312,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="a2_aar";
-					description="Alpha 2 Assistant Automatic Rifleman";
+					description="Bravo 2 Granadero";
 				};
 				class Item3
 				{
@@ -326,7 +326,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="a2_at";
-					description="Alpha 2 Anti-Tank Rifleman";
+					description="Bravo 2 AT";
 				};
 				class Item4
 				{
@@ -335,12 +335,12 @@ class Mission
 					special="NONE";
 					id=14;
 					side="WEST";
-					vehicle="B_Soldier_A_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="a2_ab";
-					description="Alpha 2 Ammo Bearer";
+					description="Bravo 2 Medico";
 				};
 				class Item5
 				{
@@ -353,7 +353,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="a2_rm";
-					description="Alpha 2 Rifleman / LAT";
+					description="Bravo 2 Fusilero";
 				};
 			};
 		};
@@ -376,7 +376,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="b1_ftl";
-					description="Bravo 1 Fireteam Leader";
+					description="Charlie 3 Lider";
 				};
 				class Item1
 				{
@@ -390,7 +390,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="b1_ar";
-					description="Bravo 1 Automatic Rifleman";
+					description="Charlie 3 MG";
 				};
 				class Item2
 				{
@@ -404,7 +404,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="b1_aar";
-					description="Bravo 1 Assistant Automatic Rifleman";
+					description="Charlie 3 Granadero";
 				};
 				class Item3
 				{
@@ -418,7 +418,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="b1_at";
-					description="Bravo 1 Anti-Tank Rifleman";
+					description="Charlie 3 AT";
 				};
 				class Item4
 				{
@@ -432,7 +432,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="b1_ab";
-					description="Medico";
+					description="Charlie 3 Medico";
 				};
 				class Item5
 				{
@@ -445,7 +445,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b1_rm";
-					description="Bravo 1 Rifleman / LAT";
+					description="Charlie 3 Fusilero";
 				};
 			};
 		};
@@ -468,7 +468,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="b2_ftl";
-					description="Bravo 2 Fireteam Leader";
+					description="Dagger  Lider";
 				};
 				class Item1
 				{
@@ -482,7 +482,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="b2_ar";
-					description="Bravo 2 Automatic Rifleman";
+					description="Dagger MG";
 				};
 				class Item2
 				{
@@ -496,7 +496,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="b2_aar";
-					description="Bravo 2 Assistant Automatic Rifleman";
+					description="Dagger Tirador selecto";
 				};
 				class Item3
 				{
@@ -510,7 +510,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="b2_at";
-					description="Bravo 2 Anti-Tank Rifleman";
+					description="Dagger AT";
 				};
 				class Item4
 				{
@@ -519,12 +519,12 @@ class Mission
 					special="NONE";
 					id=26;
 					side="WEST";
-					vehicle="B_Soldier_A_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="b2_ab";
-					description="Bravo 2 Ammo Bearer";
+					description="Dagger Medico";
 				};
 				class Item5
 				{
@@ -537,7 +537,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b2_rm";
-					description="Bravo 2 Rifleman / LAT";
+					description="Dagger Fusilero";
 				};
 			};
 		};
@@ -560,7 +560,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="rh1_co";
-					description="Rhino 1 Commander";
+					description="Rhino 1 Lider";
 				};
 				class Item1
 				{
@@ -574,7 +574,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="rh1_driver";
-					description="Rhino 1 Driver";
+					description="Rhino 1 Conductor";
 				};
 				class Item2
 				{
@@ -588,7 +588,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="rh1_gunner";
-					description="Rhino 1 Gunner";
+					description="Rhino 1 Artillero";
 				};
 			};
 		};
@@ -1216,7 +1216,7 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={4815.4351,339,10278.825};
+					position[]={4820.0313,339,10285.13};
 					azimut=759.495;
 					special="NONE";
 					id=41;
@@ -1227,12 +1227,11 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="b_sl";
-					init="this setGroupid [""MEDEVAC""];";
-					description="Bravo Squad Leader";
+					description="Dustoff Lider";
 				};
 				class Item1
 				{
-					position[]={4815.7524,339,10275.995};
+					position[]={4819.8052,339,10283.27};
 					azimut=759.495;
 					special="NONE";
 					id=42;
@@ -1242,11 +1241,11 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="a_med";
-					description="Alpha Squad Medic";
+					description="Dustoff 2";
 				};
 				class Item2
 				{
-					position[]={4816.9888,339,10276.974};
+					position[]={4821.3906,339,10283.82};
 					azimut=759.495;
 					special="NONE";
 					id=43;
@@ -1256,11 +1255,11 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="b_med";
-					description="Bravo Squad Medic";
+					description="Dustoff 3";
 				};
 				class Item3
 				{
-					position[]={4814.5742,339,10276.954};
+					position[]={4818.4141,339,10284.926};
 					azimut=759.495;
 					special="NONE";
 					id=44;
@@ -1270,7 +1269,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="a_med2";
-					description="Alpha Squad Leader";
+					description="Dustoff 4";
 				};
 			};
 		};
@@ -3161,7 +3160,7 @@ class Mission
 			vehicle="Flag_NATO_F";
 			skill=0.60000002;
 			text="SEN_flagMOB";
-			init="this allowDamage false; this setFlagTexture ""media\SEN_imgLogo.paa"";";
+			init="this allowDamage false; this setFlagTexture ""media\esusflag.jpg"";";
 		};
 		class Item175
 		{
@@ -3171,7 +3170,7 @@ class Mission
 			vehicle="Flag_NATO_F";
 			skill=0.60000002;
 			text="SEN_flagFOB";
-			init="this allowDamage false; this setFlagTexture ""media\SEN_imgLogo.paa"";";
+			init="this allowDamage false; this setFlagTexture ""media\esusflag.jpg"";";
 		};
 		class Item176
 		{

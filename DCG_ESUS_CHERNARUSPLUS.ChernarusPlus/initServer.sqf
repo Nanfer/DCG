@@ -41,7 +41,7 @@ CIVILIAN setFriend [SEN_enemySide,1];
 // location setup
 SEN_range = worldSize*0.5;
 SEN_centerPos = [SEN_range,SEN_range,0];
-_SEN_blacklistLocation = ["Sagonisi","Ekali","Timurkalay","Delfinaki","Kalithea","Ioannina"]; // locations in array will be removed from DCG. You can add to array, but do not remove current locations from list
+_SEN_blacklistLocation = ["Drozinho","Kozlovka","Pulkovo","Rogovo","Pogorevka","Sosnovka","Myshkino","Sinistok","Zaprudnoe","Tisy","Krasnoe","Smirnovo","Ratnoe","Polesovo","Pusta","Vyshnoye","Guglovo","Shakhovka", "Staroye", "Msta", "Rog", "Tulga", "Polana", "Orlovets"]; // locations in array will be removed from DCG. You can add to array, but do not remove current locations from list
 
 { // if location is in _SEN_blacklistLocation, does not have a name or is near the MOB safezone, it is not added to DCG
 	_locName = text _x;

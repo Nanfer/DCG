@@ -17,6 +17,7 @@ publicVariable "SEN_fobVehicles";
 		(_this select 1) setvariable ["ace_medical_isMedicalFacility", true, true];
 	};
 	if (typeOf (_this select 1) in ["Land_HelipadCircle_F", "Land_HelipadCivil_F", "Land_HelipadEmpty_F","Land_HelipadRescue_F","Land_HelipadSquare_F","Land_JumpTarget_F"] && {!SEN_fobReinforced}) then {
+		sleep 2;
 		SEN_fobReinforced = true;
 		publicVariable "SEN_fobReinforced";
 		hintSilent "Helipad deployed. Reinforcements inbound.";
@@ -26,6 +27,6 @@ publicVariable "SEN_fobVehicles";
 		SEN_fobVehicles = true;
 		publicVariable "SEN_fobVehicles";
 		hintSilent "Vehicle cover deployed. You can spawn vehicles now.";
-		[(_this select 0),["rhsusf_c_hmmwv","A3_Soft_F_MRAP_01","A3_Soft_F_HEMTT"]] remoteExecCall ["SEN_fnc_fobAddAddon", 2, false];
+		[(_this select 0),["rhsusf_c_hmmwv","rhsusf_c_rg33"]] remoteExecCall ["SEN_fnc_fobAddAddon", 2, false];
 	};
 }];

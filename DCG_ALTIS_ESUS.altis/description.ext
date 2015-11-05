@@ -7,7 +7,7 @@ class Header {
 overviewPicture = "media\esusmain.paa";
 Author = "SENSEI/Piratajr";
 onLoadName = "Dynamic Combat Gen.";
-onLoadMission = "DCG ALTIS ESUS v0.2";
+onLoadMission = "DCG Chernarus + ESUS v0.2";
 loadScreen = "media\esusmain.paa";
 briefing = 0;
 respawn = 3;

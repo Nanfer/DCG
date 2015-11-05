@@ -39,8 +39,8 @@ if (_pos isEqualTo []) exitWith {
 };
 
 _taskID = format["%1_rescue_civ",SEN_taskCounterCiv];
-_taskText = "Rescue Hostage";
-_taskDescription = format["We have intel that a civilian was taken hostage by enemy sympathizers at grid (%1). Local officials request that we rescue the civilian and escort him to %2. This is an important task that will get the local population on our side.",mapGridPosition _pos, text _returnTown];
+_taskText = "Rescatar al rehen";
+_taskDescription = format["Informacion obtenida indica que un civil ha sido secuestrado por simpatizantes enemigos cerca de (%1). Las autoridades locales solicitan el rescate del civil y lo escoltemos hasta %2. Esta importante tarea pondrá de nuestro lado a la poblacion local.",mapGridPosition _pos, text _returnTown];
 
 _vehType = _wreckArray select floor (random (count _wreckArray));
 _roads = _pos nearRoads 50;
@@ -80,7 +80,7 @@ SET_TASKWPOS(_taskID,_taskDescription,_taskText,_vehPos,"C")
 	if (!alive _unit || {_unit distance2D _pos > GET_MINDIST}) exitWith {
 		[_id] call CBA_fnc_removePerFrameHandler;
 		if (alive _unit) then {
-			_taskText = "Escort Hostage";
+			_taskText = "Escoltar al rehen";
 			[_taskID,[_taskDescription,_taskText,""]] call BIS_fnc_taskSetDescription;
 			[_taskID,_returnPos] call BIS_fnc_taskSetDestination;
 			[{
@@ -100,7 +100,7 @@ SET_TASKWPOS(_taskID,_taskDescription,_taskText,_vehPos,"C")
 						_bonus = round (35 + random 20);
 						SEN_approvalCiv = SEN_approvalCiv + _bonus;
 						publicVariable "SEN_approvalCiv";
-						["SEN_approvalBonus",[_bonus,'Assisting the local population has increased your approval!']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
+						["SEN_approvalBonus",[_bonus,'Ayudar a la poblacion local ha incrementado su aprobacion']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
 						[_pos,55] call SEN_fnc_removeParticle;
 						_unit call SEN_fnc_cleanup;
 						_veh call SEN_fnc_cleanup;

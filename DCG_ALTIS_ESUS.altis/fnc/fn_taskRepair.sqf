@@ -23,14 +23,14 @@ if (GET_FOBDEPLOYED) then {
 	_size = getmarkersize "SEN_fob_border_mrk";
 	_pos = [getmarkerpos "SEN_fob_mrk", (_size select 0) + 100, (_size select 0) + 400, 1, 0, 0.6, 0, [],[getmarkerpos "SEN_fob_mrk",getmarkerpos "SEN_fob_mrk"]] call BIS_fnc_findSafePos;
 	SET_FOBLOCK
-	_taskDescription = format ["Intel shows that enemy forces plan to attack %1 in the coming days. In response, Command has increased the frequency of patrols in the area. A friendly unit scouting around %1 is in need of repair supplies. Make sure our soldiers are in top shape. Gather the necessary supplies and repair the patrol vehicles.",_name];
+	_taskDescription = format ["Inteligencia indica que un poblado local sera atacado en los proximos días. Mando ha aumentado la frecuencia de las patrullas en la zona. Una unidad aliada cerca de %1 necesita asistencia. Asegurese de que nuestros hombres estan en buena forma. Reuna los suministros necesarios y repare el vehiculo alido.",_name];
 } else {
 	_town = SEN_whitelistLocation select floor (random (count SEN_whitelistLocation));
 	_name = text _town;
 	_pos = getpos _town;
 	_size = size _town;
 	_pos = [_pos, (_size select 0) + 100, (_size select 0) + 400, 1, 0, 0.6, 0, [], [_pos,_pos]] call BIS_fnc_findSafePos;
-	_taskDescription = format ["Intel shows that another local settlement will be occupied in the coming days. Command has increased the frequency of patrols in several key areas. A friendly unit scouting near %1 is in need of repair supplies. Make sure our soldiers are in top shape. Gather the necessary supplies and repair the patrol vehicles.",_name];
+	_taskDescription = format ["Inteligencia indica que un poblado local sera atacado en los proximos días. Mando ha aumentado la frecuencia de las patrullas en la zona. Una unidad aliada cerca de %1 necesita asistencia. Asegurese de que nuestros hombres estan en buena forma. Reuna los suministros necesarios y repare el vehiculo alido.",_name];
 };
 
 _pos set [2,0];

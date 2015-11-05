@@ -14,7 +14,7 @@ if !(isServer) exitWith {};
 private ["_taskID","_taskText","_taskDescription","_townName","_townPos","_townSize","_avgTownSize","_defendTown","_posCache","_roads","_cacheArray","_vehArray","_cache","_pos","_dir","_transport","_grpWest","_posEnemy","_squad","_wp"];
 
 _taskID = "defend";
-_taskText = "Defend Cache";
+_taskText = "Defender suministros";
 _taskDescription = "";
 
 if (GET_FOBDEPLOYED) then {
@@ -23,14 +23,14 @@ if (GET_FOBDEPLOYED) then {
 	_townSize = getmarkersize "SEN_fob_border_mrk";
 	_avgTownSize = (((_townSize select 0) + (_townSize select 1))/2);
 	SET_FOBLOCK
-	_taskDescription = format ["A few hours ago, Command dispatched a convoy to %1. Upon arrival, the convoy was attacked by enemy forces. We have intel that our soldiers are holding out, but we're sending your team in to assist. Protect the supply cache and minimize friendly casualties.",_townName];
+	_taskDescription = format ["Hace unas horas, Mando envio un convoy a %1. A su llegada, el convoy fue atacado por insurgentes. La informacion obtenida indica que nuestros soldados están resistiendo, aun así enviaremos a su equipo para ayudar. Proteja el convoy de suministros y minimize las bajas alidas.",_townName];
 } else {
 	_defendTown = SEN_whitelistLocation select floor (random (count SEN_whitelistLocation));
 	_townName = text _defendTown;
 	_townPos = getpos _defendTown;
 	_townSize = size _defendTown;
 	_avgTownSize = ((_townSize select 0) + (_townSize select 1))/2;
-	_taskDescription = format ["Yesterday, FOB Falken sent in a request for supplies. A few hours ago, Command dispatched a convoy enroute to Falken. Somewhere in %1, the convoy was attacked by enemy forces. We have intel that our soldiers are holding out, but we're sending your team in to assist. Protect the supply cache and minimize friendly casualties.",_townName];
+	_taskDescription = format ["Ayer, FOB Falken envio una solicitud de suministros. Hace unas horas, Mando envio un convoy a Falken. En algún lado cerca de %1, el convoy fue atacado por fuerzas enemigas. Según la informacion obtenida nuestros hombres están resistiendo el ataque, aun así enviaremos a su equipo para ayudar. Proteja el convoy de suministros y minimize las bajas alidas.",_townName];
 };
 
 SEN_waveGrp = grpNull;
