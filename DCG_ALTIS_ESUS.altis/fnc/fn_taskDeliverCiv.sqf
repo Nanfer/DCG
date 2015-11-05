@@ -17,7 +17,7 @@ _targetTown = SEN_whitelistLocation select floor (random (count SEN_whitelistLoc
 
 _taskID = format["%1_deliver_civ",SEN_taskCounterCiv];
 _taskText = "Sum. Medicos";
-_taskDescription = format["La ocupacion enemiga ha dejado a la poblacion local en la miseria. La pobalcion de %1 (%2) necesita desesperadamente suministros médicos.<br/><br/>Cargue los suministros para su transporte y entregelos en %1.",text _targetTown,mapGridPosition (getpos _targetTown)];
+_taskDescription = format["La ocupacion enemiga ha dejado a la poblacion local en la miseria. La pobalcion de %1 (%2) necesita desesperadamente suministros médicos. (SUM. ACE AVANZADO)<br/><br/>Cargue los suministros para su transporte y entregelos en %1.",text _targetTown,mapGridPosition (getpos _targetTown)];
 
 _count = 3;
 _aidArray = [];
