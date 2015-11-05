@@ -71,7 +71,7 @@ if (GET_FOBDEPLOYED && random 1 < 0.5) then {
 			_bonus = 20;
 			SEN_approvalCiv = SEN_approvalCiv + _bonus;
 			publicVariable "SEN_approvalCiv";
-			["SEN_approvalBonus",[_bonus,'Assisting the local population has increased your approval!']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
+			["SEN_approvalBonus",[_bonus,'Ayudar a la poblacion local ha incrementado su aprobacion']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
 			SET_TASKCIVREBEL
 		};
 		if ((leader _rebelGrp) distance _targetPos < GET_MINDIST) exitWith {
@@ -152,7 +152,7 @@ if (GET_FOBDEPLOYED && random 1 < 0.5) then {
 			_bonus = 20;
 			SEN_approvalCiv = SEN_approvalCiv + _bonus;
 			publicVariable "SEN_approvalCiv";
-			["SEN_approvalBonus",[_bonus,'Assisting the local population has increased your approval!']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
+			["SEN_approvalBonus",[_bonus,'Ayudar a la poblacion local ha incrementado su aprobacion']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
 			SET_TASKCIVREBEL
 		};
 	}, 5, [_taskID,_tar,_rebelGrp]] call CBA_fnc_addPerFrameHandler;

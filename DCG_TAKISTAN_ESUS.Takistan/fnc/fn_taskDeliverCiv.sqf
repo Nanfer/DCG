@@ -16,7 +16,7 @@ private ["_targetTown","_taskID","_taskText","_taskDescription","_count","_aidAr
 _targetTown = SEN_whitelistLocation select floor (random (count SEN_whitelistLocation));
 
 _taskID = format["%1_deliver_civ",SEN_taskCounterCiv];
-_taskText = "Entregar los suministros";
+_taskText = "Entregar sum.";
 _taskDescription = format["La ocupacion enemiga ha dejado a la poblacion local en la miseria. La pobalcion de %1 (%2) necesita desesperadamente suministros médicos.<br/><br/>Cargue los suministros para su transporte y entregelos en %1.",text _targetTown,mapGridPosition (getpos _targetTown)];
 
 _count = 3;
@@ -78,7 +78,7 @@ SET_TASKWPOS(_taskID,_taskDescription,_taskText,_pos,"C")
 				_bonus = round (35 + random 20);
 				SEN_approvalCiv = SEN_approvalCiv + _bonus;
 				publicVariable "SEN_approvalCiv";
-				["SEN_approvalBonus",[_bonus,'Assisting the local population has increased your approval!']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
+				["SEN_approvalBonus",[_bonus,'Ayudar a la poblacion local ha incrementado su aprobacion']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
 				_aidArray call SEN_fnc_cleanup;
 				call SEN_fnc_setTaskCiv;
 			};

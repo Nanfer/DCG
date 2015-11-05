@@ -14,7 +14,7 @@ if !(isServer) exitWith {};
 private ["_taskID","_taskText","_taskDescription","_pos","_cacheArray","_radius","_grpArray","_baseArray","_vehArray","_grp","_hq","_ammo","_posMrk","_mrk"];
 
 _taskID = "cache";
-_taskText = "Destruir la cache";
+_taskText = "Destruir cache";
 _taskDescription = "De acuerdo con la inteligencia obtenida, un pequeño contingente enemigo está almacenando armamento y municiones en la zona designada. Tu objetivo será destruir la cache.";
 
 _pos = [];

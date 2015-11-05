@@ -69,7 +69,7 @@ if(GET_DEBUG) then {
 	};
 	if (_unit distance2D _pos > GET_MINDIST) exitWith {
 		[_id] call CBA_fnc_removePerFrameHandler;
-		_taskText = "Escort VIP";
+		_taskText = "Escoltar VIP";
 		[_taskID,[_taskDescription,_taskText,""]] call BIS_fnc_taskSetDescription;
 		[_taskID,getmarkerpos "SEN_hq_mrk"] call BIS_fnc_taskSetDestination;
 

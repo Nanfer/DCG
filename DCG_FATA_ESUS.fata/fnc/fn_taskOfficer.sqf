@@ -38,12 +38,12 @@ SEN_officer addEventHandler ["hit", {
 			{
 				SEN_taskSuccess = 1;
 				publicVariableServer "SEN_taskSuccess";
-				hintSilent "You found valuable intel.";
+				hintSilent "Has encontrado informacion.";
 			},
 			{
 
 			},
-			"Searching Officer..."
+			"Registrando..."
 		] call ace_common_fnc_progressBar;
 	},{true}] call ace_interact_menu_fnc_createAction;
 	[SEN_officer, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
