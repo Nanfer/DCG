@@ -39,7 +39,7 @@ SET_TASKWPOS(_taskID,_taskDescription,_taskText,_pos,"C")
 
 	if ({!alive _x} count _aidArray > 0) exitWith {
 		[_id] call CBA_fnc_removePerFrameHandler;
-		[_taskID, "FAILED"] call BIS_fnc_taskSetState;
+		[_taskID, "FALLADO"] call BIS_fnc_taskSetState;
 		_aidArray call SEN_fnc_cleanup;
 		call SEN_fnc_setTaskCiv;
 	};
@@ -74,11 +74,11 @@ SET_TASKWPOS(_taskID,_taskDescription,_taskText,_pos,"C")
 			if ({(getPosATL _x) distance _pos < GET_MINDIST} count _aidArray isEqualTo _count) exitWith {
 				[_id] call CBA_fnc_removePerFrameHandler;
 				if (random 1 < 0.70) then {[_pos,SEN_enemySide] call SEN_fnc_spawnReinforcements};
-				[_taskID, "SUCCEEDED"] call BIS_fnc_taskSetState;
+				[_taskID, "COMPLETADO"] call BIS_fnc_taskSetState;
 				_bonus = round (35 + random 20);
 				SEN_approvalCiv = SEN_approvalCiv + _bonus;
 				publicVariable "SEN_approvalCiv";
-				["SEN_approvalBonus",[_bonus,'Assisting the local population has increased your approval!']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
+				["SEN_approvalBonus",[_bonus,'Ayudando a la poblacion local hemos aumentado su aprobacion.']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
 				_aidArray call SEN_fnc_cleanup;
 				call SEN_fnc_setTaskCiv;
 			};
