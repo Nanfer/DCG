@@ -14,7 +14,7 @@ if !(isServer) exitWith {};
 private ["_taskID","_taskText","_taskDescription","_town","_townPos","_officerID","_action"];
 
 _taskID = "officer";
-_taskText = "Localizar al oficial";
+_taskText = "Localizar oficial";
 _taskDescription = "Un oficial de alto rango enemigo se encuentra en una población ocupada.<br/><br/>Encuentre al oficial y recoja toda la informacion que pueda.";
 
 _town = SEN_occupiedLocation select floor (random (count SEN_occupiedLocation));
@@ -31,19 +31,19 @@ SEN_officer addEventHandler ["hit", {
 }];
 
 [[],{
-	_action = ["SEN_OfficerIntel","Search Officer for Intel","",{
+	_action = ["SEN_OfficerIntel","Buscar informacion en el oficial.","",{
 		[
 			10,
 			[],
 			{
 				SEN_taskSuccess = 1;
 				publicVariableServer "SEN_taskSuccess";
-				hintSilent "You found valuable intel.";
+				hintSilent "Has encontrado informacion valiosa.";
 			},
 			{
 
 			},
-			"Searching Officer..."
+			"Registrando..."
 		] call ace_common_fnc_progressBar;
 	},{true}] call ace_interact_menu_fnc_createAction;
 	[SEN_officer, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
@@ -63,7 +63,7 @@ if(GET_DEBUG) then {
 
 	if (SEN_taskSuccess isEqualTo 1) exitWith {
 		[_id] call CBA_fnc_removePerFrameHandler;
-		[_taskID, "SUCCEEDED"] call BIS_fnc_taskSetState;
+		[_taskID, "COMPLETADO"] call BIS_fnc_taskSetState;
 		deleteVehicle SEN_officer;
 		call SEN_fnc_setTask;
 	};

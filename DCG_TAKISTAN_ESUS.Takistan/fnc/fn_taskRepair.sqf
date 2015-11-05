@@ -23,7 +23,7 @@ if (GET_FOBDEPLOYED) then {
 	_size = getmarkersize "SEN_fob_border_mrk";
 	_pos = [getmarkerpos "SEN_fob_mrk", (_size select 0) + 100, (_size select 0) + 400, 1, 0, 0.6, 0, [],[getmarkerpos "SEN_fob_mrk",getmarkerpos "SEN_fob_mrk"]] call BIS_fnc_findSafePos;
 	SET_FOBLOCK
-	_taskDescription = format ["Intel shows that enemy forces plan to attack %1 in the coming days. In response, Command has increased the frequency of patrols in the area. A friendly unit scouting around %1 is in need of repair supplies. Make sure our soldiers are in top shape. Gather the necessary supplies and repair the patrol vehicles.",_name];
+	_taskDescription = format ["Inteligencia indica que un poblado local sera atacado en los proximos días. Mando ha aumentado la frecuencia de las patrullas en la zona. Una unidad aliada cerca de %1 necesita asistencia. Asegurese de que nuestros hombres estan en buena forma. Reuna los suministros necesarios y repare el vehiculo alido.",_name];
 } else {
 	_town = SEN_whitelistLocation select floor (random (count SEN_whitelistLocation));
 	_name = text _town;
@@ -85,7 +85,7 @@ SET_TASKWPOS(_taskID,_taskDescription,_taskText,_pos,"Support")
 			};
 			if !(_alive) exitWith {
 				[_id] call CBA_fnc_removePerFrameHandler;
-				[_taskID, "FAILED"] call BIS_fnc_taskSetState;
+				[_taskID, "FALLADO"] call BIS_fnc_taskSetState;
 				_vehArray call SEN_fnc_cleanup;
 				(units _grp) call SEN_fnc_cleanup;
 				[_pos,50] call SEN_fnc_removeParticle;
@@ -94,7 +94,7 @@ SET_TASKWPOS(_taskID,_taskDescription,_taskText,_pos,"Support")
 			};
 			if (_check) exitWith {
 				[_id] call CBA_fnc_removePerFrameHandler;
-				[_taskID, "SUCCEEDED"] call BIS_fnc_taskSetState;
+				[_taskID, "COMPLETADO"] call BIS_fnc_taskSetState;
 				_vehArray call SEN_fnc_cleanup;
 				(units _grp) call SEN_fnc_cleanup;
 				SET_FOBUNLOCK

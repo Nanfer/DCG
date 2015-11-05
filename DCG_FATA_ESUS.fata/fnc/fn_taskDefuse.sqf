@@ -20,7 +20,7 @@ SEN_codeInput = [];
 publicVariable "SEN_codeInput";
 SEN_codeDefuse = [(round(random 9)), (round(random 9)), (round(random 9)), (round(random 9)), (round(random 9)), (round(random 9))];
 publicVariable "SEN_codeDefuse";
-SEN_wireDefuse = ["BLUE", "WHITE", "YELLOW", "GREEN"] select floor (random (count ["BLUE", "WHITE", "YELLOW", "GREEN"]));
+SEN_wireDefuse = ["AZUL", "BLANCO", "AMARILLO", "VERDE"] select floor (random (count ["AZUL", "BLANCO", "AMARILLO", "VERDE"]));
 publicVariable "SEN_wireDefuse";
 _bombTown = SEN_whitelistLocation select floor (random (count SEN_whitelistLocation));
 _townName = text _bombTown;
@@ -34,7 +34,7 @@ _pos1 = [];
 _pos2 = [];
 
 _taskID = "defuse";
-_taskText = "Desactivar el explosivo";
+_taskText = "Desactivar bomba";
 _taskDescription = format["La informacion obtenida del enemigo detalla el despliegue de IEDs en la zona de operaciones. %1 (%2). Si los explosivos improvisados estallan, civiles inocentes moriran; no podemos permitirlo.<br/><br/>Encuentre el codigo de desactivación en la zona designada y desactive el detonador.",_townName,mapGridPosition _townPos];
 
 // A2 map compatibility
@@ -201,7 +201,7 @@ SET_TASK(_taskID,_taskDescription,_taskText,"Search")
 			};
 			if (SEN_defused) exitWith {
 				[_id] call CBA_fnc_removePerFrameHandler;
-				[_taskID, "SUCCEEDED"] call BIS_fnc_taskSetState;
+				[_taskID, "COMPLETADO"] call BIS_fnc_taskSetState;
 				remoteExecCall ["", _detID];
 				remoteExecCall ["", _codeID];
 				deleteVehicle _laptop;
@@ -227,7 +227,7 @@ SET_TASK(_taskID,_taskDescription,_taskText,"Search")
 	};
 	if (SEN_defused) exitWith {
 		[_id] call CBA_fnc_removePerFrameHandler;
-		[_taskID, "SUCCEEDED"] call BIS_fnc_taskSetState;
+		[_taskID, "COMPLETADO"] call BIS_fnc_taskSetState;
 		remoteExecCall ["", _detID];
 		remoteExecCall ["", _codeID];
 		deleteVehicle _laptop;
