@@ -56,7 +56,7 @@ SEN_curatorFOB addCuratorAddons _addons;
 
 	waitUntil {sleep 10; {typeOf _x in _hq} count (curatorEditableObjects (_this select 2)) > 0};
 
-	"HQ deployed.\nCivilian approval influenced by FOB readiness.\nAerial reconnaissance online." remoteExecCall ["hintSilent", owner (_this select 1), false];
+	"HQ desplegado.\nLa aprobacion local se verá influenciada por el FOB.\nRecon. aereo en linea." remoteExecCall ["hintSilent", owner (_this select 1), false];
 	"SEN_fob_mrk" setMarkerColor "ColorWEST";
 	"SEN_fob_border_mrk" setMarkerColor "ColorWEST";
 	"SEN_fob_recon_mrk" setMarkerColor "ColorWEST";
@@ -84,7 +84,7 @@ SEN_curatorFOB addCuratorAddons _addons;
 		_bonus = (ceil(abs(log((curatorPoints (_this select 2)) max .001))*17) min 15);
 		SEN_approvalCiv = SEN_approvalCiv + _bonus;
 		publicVariable "SEN_approvalCiv";
-		["SEN_approvalBonus",[_bonus,'FOB readiness provides an approval bonus!']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
+		["SEN_approvalBonus",[_bonus,'La disposicion del FOB otorga aprobacion extra.']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
 		uiSleep 1800;
 	};
 	_mrkArray call SEN_fnc_cleanup;

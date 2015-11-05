@@ -13,18 +13,18 @@ _userName = _this select 0;
 _answer = _this select 1;
 
 call {
-	if (_answer isEqualTo 0) exitWith {hintSilent (_userName + " denies FOB construction request.")};
+	if (_answer isEqualTo 0) exitWith {hintSilent (_userName + " ha rechazado la peticion de construccion.")};
 	if (_answer isEqualTo 1) exitWith {
-		hintSilent (_userName + " accepts FOB construction request.");
+		hintSilent (_userName + " ha aceptado la peticion de construccion.");
 		uiSleep 5;
 		_key = (actionKeys "curatorInterface") select 0;
 		if (!isNil "_key") then {
-			hint format ["Press the Zeus key, %1, to construct FOB Pirelli.",keyName _key]
+			hint format ["Presione la tecla de Zeus, %1, para editar FOB Pirelli.",keyName _key]
 		} else {
-			hint format ["Press the Zeus key, %1, to construct FOB Pirelli.",'UNBOUND'];
+			hint format ["Presione la tecla de Zeus, %1, para editar FOB Pirelli.",'UNBOUND'];
 		};
 	};
-	hintSilent "No reply for FOB construction request.";
+	hintSilent "Ninguna peticion para construccion FOB.";
 };
 
 //player setVariable ["SEN_inProgress",false];

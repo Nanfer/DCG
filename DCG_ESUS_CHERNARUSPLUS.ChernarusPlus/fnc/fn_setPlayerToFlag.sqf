@@ -10,7 +10,7 @@ __________________________________________________________________*/
 private "_flag";
 
 _flag = objNull;
-if (getMarkerColor "sen_fob_mrk" isEqualTo "") exitWith {hintSilent "FOB Pirelli is not deployed."};
+if (getMarkerColor "sen_fob_mrk" isEqualTo "") exitWith {hintSilent "FOB Pirelli no está desplegado."};
 
 if ((_this select 0) isEqualTo 0) then {_flag = SEN_flagMOB} else {_flag = SEN_flagFOB};
 
