@@ -127,7 +127,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="plt_co";
-					description="Uniform - Lider Global ";
+					description="Uniform Lider Global ";
 				};
 				class Item1
 				{
@@ -141,7 +141,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="plt_sgt";
-					description="Uniform - RTO";
+					description="Uniform RTO";
 				};
 				class Item2
 				{
@@ -155,7 +155,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="plt_med";
-					description="Uniform - Medico";
+					description="Uniform Medico";
 				};
 				class Item3
 				{
@@ -169,7 +169,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="plt_eng";
-					description="Uniform - Ingeniero";
+					description="Uniform Ingeniero";
 				};
 			};
 		};
