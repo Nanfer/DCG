@@ -177,7 +177,7 @@ if (SEN_acreEnabled) then {
 	sleep 2;
 	closeDialog 0;
 	_ret = [
-		parseText "<img size='3' valign='top' align='center' image='media\esusmain.paa'/><br/><br/><t align='center'>Bienvenido a DCG Chernarus + ESUS v0.3</t><br/><br/>",
+		parseText "<img size='3' valign='top' align='center' image='media\esusmain.paa'/><br/><br/><t align='center'>Bienvenido a DCG Chernarus + ESUS v0.4</t><br/><br/>",
 		"Bienvenido a DCG Chernarus",
 		"Manual",
 		"Continuar"

@@ -87,8 +87,8 @@ class Mission
 	randomSeed=9482434;
 	class Intel
 	{
-		briefingName="DCG_ESUS_CHERNARUSPLUS_V0.3";
-		overviewText="DCG ESUS Chernarus Plus v0.3";
+		briefingName="DCG_ESUS_CHERNARUSPLUS_V0.4";
+		overviewText="DCG ESUS Chernarus Plus v0.4";
 		resistanceWest=0;
 		startWeather=0.25;
 		startWind=0.099999994;
@@ -127,7 +127,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="plt_co";
-					description="UNIFORM - Lider Global ";
+					description="Uniform - Lider Global ";
 				};
 				class Item1
 				{
@@ -141,7 +141,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="plt_sgt";
-					description="UNIFORM - RTO";
+					description="Uniform - RTO";
 				};
 				class Item2
 				{
@@ -155,7 +155,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="plt_med";
-					description="UNIFORM - Medico";
+					description="Uniform - Medico";
 				};
 				class Item3
 				{
@@ -169,7 +169,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="plt_eng";
-					description="UNIFORM - Ingeniero";
+					description="Uniform - Ingeniero";
 				};
 			};
 		};
@@ -468,7 +468,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="b2_ftl";
-					description="DAGGER  Lider";
+					description="Dagger  Lider";
 				};
 				class Item1
 				{
@@ -482,7 +482,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="b2_ar";
-					description="DAGGER MG";
+					description="Dagger MG";
 				};
 				class Item2
 				{
@@ -496,7 +496,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="b2_aar";
-					description="DAGGER Tirador selecto";
+					description="Dagger Tirador selecto";
 				};
 				class Item3
 				{
@@ -510,7 +510,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="b2_at";
-					description="DAGGER AT";
+					description="Dagger AT";
 				};
 				class Item4
 				{
@@ -524,7 +524,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="b2_ab";
-					description="DAGGER Medico";
+					description="Dagger Medico";
 				};
 				class Item5
 				{
@@ -537,7 +537,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="b2_rm";
-					description="DAGGER Fusilero";
+					description="Dagger Fusilero";
 				};
 			};
 		};
@@ -1227,7 +1227,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="b_sl";
-					description="DUSTOFF Lider";
+					description="Dustoff Lider";
 				};
 				class Item1
 				{
@@ -1241,7 +1241,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="a_med";
-					description="DUSTOFF 2";
+					description="Dustoff 2";
 				};
 				class Item2
 				{
@@ -1255,7 +1255,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="b_med";
-					description="DUSTOFF 3";
+					description="Dustoff 3";
 				};
 				class Item3
 				{
@@ -1269,7 +1269,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="a_med2";
-					description="DUSTOFF 4";
+					description="Dustoff 4";
 				};
 			};
 		};

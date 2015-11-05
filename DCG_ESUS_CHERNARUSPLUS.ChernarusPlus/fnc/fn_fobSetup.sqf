@@ -15,7 +15,7 @@ _unit = param [0,objNull];
 _pos = param [1,[0,0,0]];
 _radius = param [2,100];
 _reconRad = SEN_range*0.17 max 2500;
-_addons = ["A3_Structures_F_Mil_Cargo","A3_Structures_F_Mil_Fortification","A3_Structures_F_Mil_Helipads","A3_Structures_F_Mil_Shelters","A3_Structures_F_Civ_Lamps","A3_Structures_F_Mil_BagBunker","A3_Structures_F_Mil_BagFence","A3_Structures_F_Civ_Camping","ace_medical"];
+_addons = ["A3_Structures_F_Mil_Cargo","A3_Structures_F_Mil_Fortification","A3_Structures_F_Mil_Helipads","A3_Structures_F_Mil_Shelters","A3_Structures_F_Civ_Lamps","A3_Structures_F_Mil_BagBunker","A3_Structures_F_Mil_BagFence","A3_Structures_F_Civ_Camping","ace_medical","rhsusf_c_weapons"];
 //_addonsVeh = ["rhsusf_c_hmmwv","A3_Soft_F_MRAP_01","A3_Soft_F_HEMTT"];
 
 _unit assignCurator SEN_curatorFOB;
