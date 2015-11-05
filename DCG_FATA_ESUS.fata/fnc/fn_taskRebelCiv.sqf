@@ -67,11 +67,11 @@ if (GET_FOBDEPLOYED && random 1 < 0.5) then {
 
 		if ({alive _x} count (units _rebelGrp) isEqualTo 0) exitWith {
 			[_id] call CBA_fnc_removePerFrameHandler;
-			[_taskID, "COMPLETADO"] call BIS_fnc_taskSetState;
+			[_taskID, "SUCCEEDED"] call BIS_fnc_taskSetState;
 			_bonus = 20;
 			SEN_approvalCiv = SEN_approvalCiv + _bonus;
 			publicVariable "SEN_approvalCiv";
-			["SEN_approvalBonus",[_bonus,'Ayudando a la poblacion local hemos aumentado su aprobacion.']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
+			["SEN_approvalBonus",[_bonus,'Assisting the local population has increased your approval!']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
 			SET_TASKCIVREBEL
 		};
 		if ((leader _rebelGrp) distance _targetPos < GET_MINDIST) exitWith {
@@ -82,7 +82,7 @@ if (GET_FOBDEPLOYED && random 1 < 0.5) then {
 				_x setDamage 1;
 			} foreach (curatorEditableObjects SEN_curatorFOB);
 			call SEN_fnc_fobDelete;
-			[_taskID, "FALLADO"] call BIS_fnc_taskSetState;
+			[_taskID, "FAILED"] call BIS_fnc_taskSetState;
 			(units _rebelGrp) call SEN_fnc_cleanup;
 			SET_TASKCIVREBEL
 		};
@@ -141,18 +141,18 @@ if (GET_FOBDEPLOYED && random 1 < 0.5) then {
 
 		if (isNull _tar || {(getposATL _tar distance getposATL (leader _rebelGrp) > 1000) && !(isPlayer((leader _rebelGrp) findNearestEnemy (leader _rebelGrp)))}) exitWith {
 			[_id] call CBA_fnc_removePerFrameHandler;
-			[_taskID, "CANCELADO"] call BIS_fnc_taskSetState;
+			[_taskID, "CANCELED"] call BIS_fnc_taskSetState;
 			(units _rebelGrp) call SEN_fnc_cleanup;
 			SET_TASKCIVREBEL
 		};
 
 		if ({alive _x} count (units _rebelGrp) isEqualTo 0) exitWith {
 			[_id] call CBA_fnc_removePerFrameHandler;
-			[_taskID, "COMPLETADO"] call BIS_fnc_taskSetState;
+			[_taskID, "SUCCEEDED"] call BIS_fnc_taskSetState;
 			_bonus = 20;
 			SEN_approvalCiv = SEN_approvalCiv + _bonus;
 			publicVariable "SEN_approvalCiv";
-			["SEN_approvalBonus",[_bonus,'Ayudando a la poblacion local hemos aumentado su aprobacion.']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
+			["SEN_approvalBonus",[_bonus,'Assisting the local population has increased your approval!']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
 			SET_TASKCIVREBEL
 		};
 	}, 5, [_taskID,_tar,_rebelGrp]] call CBA_fnc_addPerFrameHandler;

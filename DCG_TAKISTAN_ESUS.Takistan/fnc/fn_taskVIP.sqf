@@ -14,7 +14,7 @@ if !(isServer) exitWith {};
 private ["_taskID","_taskText","_taskDescription","_houseArray","_pos","_grp1","_unit","_grpArray","_vehArray","_grp2","_mrk"];
 
 _taskID = "vip";
-_taskText = "Rescatar VIP";
+_taskText = "Rescatar al VIP";
 _taskDescription = "Nuestra informacion indica que el hijo de un lider local ha sido secuestrado por el enemigo.<br/><br/>Encuentre al VIP y trasladelo al cuartel general en FOB Dodge.";
 
 _houseArray = [];
@@ -62,7 +62,7 @@ if(GET_DEBUG) then {
 
 	if !(alive _unit) exitWith {
 		[_id] call CBA_fnc_removePerFrameHandler;
-		[_taskID, "FALLADO"] call BIS_fnc_taskSetState;
+		[_taskID, "FAILED"] call BIS_fnc_taskSetState;
 		_unit call SEN_fnc_cleanup;
 		_mrk call SEN_fnc_cleanup;
 		call SEN_fnc_setTask;
@@ -79,14 +79,14 @@ if(GET_DEBUG) then {
 
 			if !(alive _unit) exitWith {
 				[_id] call CBA_fnc_removePerFrameHandler;
-				[_taskID, "FALLADO"] call BIS_fnc_taskSetState;
+				[_taskID, "FAILED"] call BIS_fnc_taskSetState;
 				_unit call SEN_fnc_cleanup;
 				_mrk call SEN_fnc_cleanup;
 				call SEN_fnc_setTask;
 			};
 			if (_unit distance (getmarkerpos "SEN_hq_mrk") < GET_MINDIST && {[_unit] call ace_common_fnc_isAwake}) exitWith {
 				[_id] call CBA_fnc_removePerFrameHandler;
-				[_taskID, "COMPLETADO"] call BIS_fnc_taskSetState;
+				[_taskID, "SUCCEEDED"] call BIS_fnc_taskSetState;
 				_unit call SEN_fnc_cleanup;
 				_mrk call SEN_fnc_cleanup;
 				call SEN_fnc_setTask;
