@@ -17,4 +17,4 @@ if (SEN_tfarEnabled) exitWith {
 	[] spawn SEN_fnc_setRadioTFAR;
 };
 
-hintSilent "Cannot issue radio. You do not have ACRE2 or TFR enabled.";
+hintSilent "No podemos asignarle una radio. ACRE2 o TFAR desactivado.";

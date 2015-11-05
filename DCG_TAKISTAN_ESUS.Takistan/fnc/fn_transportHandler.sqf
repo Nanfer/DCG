@@ -134,7 +134,7 @@ deleteVehicle _helipad;
 waitUntil {uiSleep 1; (isPlayer (_transport turretUnit [0]) || time > (_t + 180))};
 
 if !(isPlayer (_transport turretUnit [0])) exitWith {
-	"HLZ no seleccionada.Volviendo a base." remoteExecCall ["hintSilent", crew _transport, false];
+	"LZ no seleccionada.Volviendo a base." remoteExecCall ["hintSilent", crew _transport, false];
 	{if (isPlayer _x) then {moveOut _x}} forEach (crew _transport);
 	_transport doMove [0,0,0];
 

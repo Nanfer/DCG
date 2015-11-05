@@ -15,7 +15,7 @@ _unit = param [0,objNull];
 _pos = param [1,[0,0,0]];
 _radius = param [2,100];
 _reconRad = SEN_range*0.17 max 2500;
-_addons = ["A3_Structures_F_Mil_Cargo","A3_Structures_F_Mil_Fortification","A3_Structures_F_Mil_Helipads","A3_Structures_F_Mil_Shelters","A3_Structures_F_Civ_Lamps","A3_Structures_F_Mil_BagBunker","A3_Structures_F_Mil_BagFence","A3_Structures_F_Civ_Camping","ace_medical"];
+_addons = ["A3_Structures_F_Mil_Cargo","A3_Structures_F_Mil_Fortification","A3_Structures_F_Mil_Helipads","A3_Structures_F_Mil_Shelters","A3_Structures_F_Civ_Lamps","A3_Structures_F_Mil_BagBunker","A3_Structures_F_Mil_BagFence","A3_Structures_F_Civ_Camping","ace_medical","rhsusf_c_weapons"];
 //_addonsVeh = ["rhsusf_c_hmmwv","A3_Soft_F_MRAP_01","A3_Soft_F_HEMTT"];
 
 _unit assignCurator SEN_curatorFOB;
@@ -56,7 +56,7 @@ SEN_curatorFOB addCuratorAddons _addons;
 
 	waitUntil {sleep 10; {typeOf _x in _hq} count (curatorEditableObjects (_this select 2)) > 0};
 
-	"HQ deployed.\nCivilian approval influenced by FOB readiness.\nAerial reconnaissance online." remoteExecCall ["hintSilent", owner (_this select 1), false];
+	"HQ desplegado.\nLa aprobacion local se verá influenciada por el FOB.\nRecon. aereo en linea." remoteExecCall ["hintSilent", owner (_this select 1), false];
 	"SEN_fob_mrk" setMarkerColor "ColorWEST";
 	"SEN_fob_border_mrk" setMarkerColor "ColorWEST";
 	"SEN_fob_recon_mrk" setMarkerColor "ColorWEST";
@@ -84,7 +84,7 @@ SEN_curatorFOB addCuratorAddons _addons;
 		_bonus = (ceil(abs(log((curatorPoints (_this select 2)) max .001))*17) min 15);
 		SEN_approvalCiv = SEN_approvalCiv + _bonus;
 		publicVariable "SEN_approvalCiv";
-		["SEN_approvalBonus",[_bonus,'FOB readiness provides an approval bonus!']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
+		["SEN_approvalBonus",[_bonus,'La disposicion del FOB otorga aprobacion extra.']] remoteExecCall ["BIS_fnc_showNotification", allPlayers, false];
 		uiSleep 1800;
 	};
 	_mrkArray call SEN_fnc_cleanup;

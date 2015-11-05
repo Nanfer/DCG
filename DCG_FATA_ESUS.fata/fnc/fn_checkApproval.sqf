@@ -14,4 +14,4 @@ _stance = _approvalArray select (count _approvalArray - 1); // always last eleme
 _suicide = _approvalArray select 0;
 _rebel = _approvalArray select 1;
 
-hintSilent format["%2\nCivilian Approval: %3\nChance of Suicide Attack: %4%%1\nChance of Rebel Activity: %5%1","%",_stance,round SEN_approvalCiv,(str _suicide), (str _rebel)];
+hintSilent format["%2\nAprobacion civil: %3\nProb. Ataque suicida: %4%%1\nActividad rebelde: %5%1","%",_stance,round SEN_approvalCiv,(str _suicide), (str _rebel)];

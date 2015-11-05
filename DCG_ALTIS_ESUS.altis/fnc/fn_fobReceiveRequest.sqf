@@ -13,7 +13,7 @@ _requestor = _this select 0;
 _time = time;
 SEN_fobResponse = -1;
 
-hintSilent format["%1" + " requests control of FOB construction. Reply via ACE interaction menu.",name _requestor];
+hintSilent format["%1" + " solicita el control del editor del FOB. Responda mediante el menu de ACE",name _requestor];
 
 _action = ["SEN_FOBRequestAccept","Accept Request","",{SEN_fobResponse = 1},{true}] call ace_interact_menu_fnc_createAction;
 [player, 1, ["ACE_SelfActions","SEN_DCG","SEN_FOB"], _action] call ace_interact_menu_fnc_addActionToObject;
