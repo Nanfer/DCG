@@ -87,8 +87,8 @@ class Mission
 	randomSeed=9482434;
 	class Intel
 	{
-		briefingName="DCG_ESUS_CHERNARUSPLUS_V0.4";
-		overviewText="DCG ESUS Chernarus Plus v0.4";
+		briefingName="DCG_ESUS_CHERNARUSPLUS_V0.5";
+		overviewText="DCG ESUS Chernarus Plus v0.5";
 		resistanceWest=0;
 		startWeather=0.25;
 		startWind=0.099999994;
